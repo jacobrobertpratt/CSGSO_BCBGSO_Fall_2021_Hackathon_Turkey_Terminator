@@ -1,7 +1,6 @@
 import json
 import pathlib
 from typing import List, Tuple, Dict, Union
-import enum
 import random as rng
 from tqdm import tqdm
 
@@ -9,16 +8,8 @@ from tqdm import tqdm
 poses = ['pron', 'prep', 'root', 'adv', 'det', 'verb', 'adj', 'noun', 'conj']
 
 
-class POSEnum(enum.Enum):
-    Noun = 0
-    Adjective = 1
-    Verb = 2
-    Adverb = 3
-    Preposition = 4
-
-
 class DictionaryEntry:
-    def __init__(self, name: str, pos: POSEnum, oe_equiv: str, innovation: bool, pg_equiv: str):
+    def __init__(self, name: str, pos: str, oe_equiv: str, innovation: bool, pg_equiv: str):
         self.name = name
         self.pos = pos
         self.oe_equiv = oe_equiv
@@ -28,16 +19,27 @@ class DictionaryEntry:
 
 def entry_from_json(s: str) -> Union[None, DictionaryEntry]:
     datum = json.loads(s)
-    if 'translations' in datum:
+    if 'translations' in datum and datum['pos'] in poses:
         translations = [d['lang'] for d in datum['translations']]
         innovation = True
+        oe_equiv = ''
+        pg_equiv = ''
         if 'ang' in translations:
             trans = None
             for t in datum['translations']:
                 if t['lang'] == 'ang':
                     trans = t
                     break
-        return DictionaryEntry(datum['word'], POSEnum(datum['pos']), )
+            oe_equiv = trans['word']
+            innovation = False
+            if 'gem-pro' in translations:
+                trans = None
+                for t in datum['translations']:
+                    if t['lang'] == 'gem-pro':
+                        trans = t
+                        break
+                pg_equiv = trans['word']
+        return DictionaryEntry(datum['word'], datum['pos'], oe_equiv, innovation, pg_equiv)
     return None
 
 
@@ -50,10 +52,7 @@ class WiktionaryController:
     def prepare(self):
         print('Loading dictionary...')
         with open(self.filename, mode='r') as fp:
-            self.data = json.load(fp)
+            self.data = [d for d in [entry_from_json(line) for line in tqdm(fp.readlines())] if d is not None]
         self.prepared = True
         print('Dictionary Loaded.')
-
-    def sample(self, n: int = 1) -> List[Tuple[str, str, POSEnum]]:
-        samples = rng.sample(self.data, n)
 
