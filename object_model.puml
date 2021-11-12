@@ -1,0 +1,73 @@
+@startuml
+package 29Hours {
+    package Iteration1 {
+        class Model {
+            1-2 hours
+            Translates the New English words into Old English
+            + fit(X, y)
+            + predict(X)
+            + score(X, y)
+        }
+
+        object WiktionaryController {
+            6 hours
+            Wraps the wiktionary API and
+            contains OE words with their translations
+        }
+    }
+
+    package Iteration2 {
+        package 2or3Hours {
+            object Dataset {
+                From pytorch, encompasses the corpus
+                and their translations
+            }
+
+            object DataLoader {
+                From pytorch, samples the dataset
+            }
+        }
+
+        package 1or2Hours {
+            class DecisionTree
+            class BoostedDecisionTree
+        }
+    }
+
+    package Iteration3 {
+        object Trainer {
+            1-2 hours if no NN, otherwise 3+ hours
+            Trains the model
+        }
+
+        object GUI {
+            6+ hours
+            Reads the New English words from the user
+            Display the Old English words generated to the user
+            Just use the terminal
+        }
+    }
+
+    GUI --> Model : "NE"
+    Model --> GUI : "OE"
+    Model <|-- DecisionTree
+    Model <|-- BoostedDecisionTree
+    BoostedDecisionTree "1" ..> "1..*" DecisionTree : "Contains"
+
+    class NeuralNetwork {
+    6+ hours
+    If we have time
+    }
+
+    Model <|-- NeuralNetwork
+    DataLoader "1" ..> "1" Dataset : "Contains"
+    Trainer "1" ..> "1" DataLoader : "Reads"
+    Dataset "1..*" ..> "1" WiktionaryController : "Uses"
+    Trainer "1" ..> "0..*" Model : "Trains"
+}
+
+note "I would like to try both of these\nto compare performance" as N1
+N1 .. DecisionTree
+N1 .. BoostedDecisionTree
+
+@enduml
