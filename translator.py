@@ -71,6 +71,7 @@ if __name__ == '__main__':
     w.prepare()
     print('Writing CSV file...')
     with open('./data/reduced_data.csv', 'wb+') as fp:
-        fp.write('modern_english,old_english,proto_germanic,proto_indo_european,innovation\n'.encode('utf8'))
-        fp.writelines(['"{}","{}","{}","{}",{}\n'.format(d.name, d.oe_equiv, d.pg_equiv, d.pie_equiv,  d.innovation).encode('utf8') for d in w.data])
+        fp.write('modern_english,old_english,proto_germanic,proto_indo_european,pos,innovation\n'.encode('utf8'))
+        fp.writelines(['"{}","{}","{}","{}","{}",{}\n'.format(d.name, d.oe_equiv, d.pg_equiv, d.pie_equiv,
+                                                              d.pos,  d.innovation).encode('utf8') for d in w.data])
     print('\n'.join(repr(d) for d in w.sample(100)))
