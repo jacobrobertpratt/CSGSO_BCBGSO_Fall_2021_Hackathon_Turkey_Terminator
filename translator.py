@@ -1,8 +1,12 @@
 import json
 import pathlib
-from typing import List, Tuple
+from typing import List, Tuple, Dict, Union
 import enum
 import random as rng
+from tqdm import tqdm
+
+
+poses = ['pron', 'prep', 'root', 'adv', 'det', 'verb', 'adj', 'noun', 'conj']
 
 
 class POSEnum(enum.Enum):
@@ -11,6 +15,30 @@ class POSEnum(enum.Enum):
     Verb = 2
     Adverb = 3
     Preposition = 4
+
+
+class DictionaryEntry:
+    def __init__(self, name: str, pos: POSEnum, oe_equiv: str, innovation: bool, pg_equiv: str):
+        self.name = name
+        self.pos = pos
+        self.oe_equiv = oe_equiv
+        self.innovation = innovation
+        self.pg_equiv = pg_equiv
+
+
+def entry_from_json(s: str) -> Union[None, DictionaryEntry]:
+    datum = json.loads(s)
+    if 'translations' in datum:
+        translations = [d['lang'] for d in datum['translations']]
+        innovation = True
+        if 'ang' in translations:
+            trans = None
+            for t in datum['translations']:
+                if t['lang'] == 'ang':
+                    trans = t
+                    break
+        return DictionaryEntry(datum['word'], POSEnum(datum['pos']), )
+    return None
 
 
 class WiktionaryController:
