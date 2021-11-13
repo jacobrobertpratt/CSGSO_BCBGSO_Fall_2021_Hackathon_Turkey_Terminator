@@ -38,28 +38,29 @@ class Phrase:
         vi = 0
         while vi < len(v):
             vt = int(v[vi])
-            try:
-                if 0 <= vt <= 0x7f:
-                    b.append(bytes([vt]).decode('utf8'))
-                    vi += 1
-                elif 0xc2 <= vt <= 0xf4 and vi < len(v) - 1:
-                    clength = 1
-                    b2 = int(v[vi + 1])
-                    while 0x80 <= b2 <= 0xbf:
-                        clength += 1
-                        if clength >= 4 or vi + clength >= len(v):
-                            break
-                        b2 = int(v[vi + clength])
-                    try:
-                        b.append(bytes(list(map(int, v[vi:vi + clength]))).decode('utf8'))
-                    except UnicodeDecodeError:
+            if vt > 0:
+                try:
+                    if 0 <= vt <= 0x7f:
+                        b.append(bytes([vt]).decode('utf8'))
+                        vi += 1
+                    elif 0xc2 <= vt <= 0xf4 and vi < len(v) - 1:
+                        clength = 1
+                        b2 = int(v[vi + 1])
+                        while 0x80 <= b2 <= 0xbf:
+                            clength += 1
+                            if clength >= 4 or vi + clength >= len(v):
+                                break
+                            b2 = int(v[vi + clength])
+                        try:
+                            b.append(bytes(list(map(int, v[vi:vi + clength]))).decode('utf8'))
+                        except UnicodeDecodeError:
+                            b.append('?')
+                        vi += clength
+                    else:
                         b.append('?')
-                    vi += clength
-                else:
+                        vi += 1
+                except UnicodeDecodeError:
                     b.append('?')
-                    vi += 1
-            except UnicodeDecodeError:
-                b.append('?')
         return ''.join(b)
 
     @staticmethod
