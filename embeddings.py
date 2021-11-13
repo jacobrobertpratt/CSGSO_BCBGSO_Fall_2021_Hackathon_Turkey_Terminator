@@ -19,4 +19,4 @@ def create_word_embeddings(path: pathlib.Path, outpath: pathlib.Path):
 
 
 if __name__ == '__main__':
-    create_word_embeddings('./data/phrases.txt', './data/embedded_phrases.csv')
+    create_word_embeddings('./data/reduced_phrases.txt', './data/embedded_phrases.csv')
