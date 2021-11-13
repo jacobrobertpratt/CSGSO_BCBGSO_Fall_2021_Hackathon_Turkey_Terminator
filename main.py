@@ -1,5 +1,6 @@
 import sys
-from PyQt5.QtWidgets import QApplication, QLabel, QWidget, QPushButton, QTextEdit, QVBoxLayout, QHBoxLayout
+from PyQt5.QtWidgets import QApplication, QLabel, QWidget, QPushButton, QTextEdit, \
+    QVBoxLayout, QHBoxLayout, QProgressBar
 import pickle
 import re
 import numpy as np
@@ -9,6 +10,11 @@ from embeddings import embed
 
 def main_window(m):
     app = QApplication(sys.argv)
+
+    mw = QWidget()
+
+    super_main_layout = QVBoxLayout()
+    status_ribbon = QLabel('Enter Text to Translate')
 
     w = QWidget()
     main_layout = QHBoxLayout()
@@ -38,7 +44,12 @@ def main_window(m):
     main_layout.addWidget(oe_entry_w)
 
     w.setLayout(main_layout)
-    w.show()
+
+    super_main_layout.addWidget(w)
+    super_main_layout.addWidget(status_ribbon)
+
+    mw.setLayout(super_main_layout)
+    mw.show()
 
     # Setting up the sockets
     def ne_text_callback():
@@ -46,12 +57,16 @@ def main_window(m):
             translate_button.setEnabled(True)
             if ne_entry.document().isModified():
                 pass
+            status_ribbon.setText('Ready')
         else:
             translate_button.setEnabled(False)
 
     ne_entry.textChanged.connect(ne_text_callback)
 
     def translate_clicked():
+        status_ribbon.setText('Converting text')
+        status_ribbon.repaint()
+
         sentences = re.split(r'[.;"]', ne_entry.document().toPlainText())
         embeddings = embed(sentences).numpy()
 
@@ -68,6 +83,8 @@ def main_window(m):
             predictions = m.predict(np.array(sentence, dtype='float'))
             oe_text += ' '.join([Phrase.vec2word(pred) for pred in predictions]) + '.'
         oe_entry.setText(oe_text)
+
+        status_ribbon.setText('Ready')
 
     translate_button.clicked.connect(translate_clicked)
 
