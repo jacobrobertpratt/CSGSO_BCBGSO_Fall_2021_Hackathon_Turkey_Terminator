@@ -211,9 +211,11 @@ All creatures, heavens and angels, sun and moon, stars and earth, all beasts and
 
 and on ðam seofoðan dæge hé geendode his weorc, and geswac ða and gehalgode þone seofoðan dæg, forðan ðe hé on ðam dæge his weorc geendode
 and on the seventh day he ended his work, and ceased, and hallowed the seventh day, because on that day he ended his work
+0 0 1 1 2 2 3 3 4 4 5 5 6 6 7 7 8 8 9 9 10 10 11 12 12 13 13 14 14 15 15 16 16 17 17 20 18 18 19 22 20 19 21 25 22 23 23 24
 
 And he beheold þa ealle his weorc ðe he geworhte, and hí wæron ealle swiðe gode
 And he beheld then all his works that he had wrought, and they were all exceedingly good
+0 0 1 1 2 2 3 3 4 4 5 5 6 6 7 7 8 8 10 9 11 10 12 11 13 12 14 13 15 14 16 15
 
 Ealle ðing he geworhte buton ælcum antimbre
 All things he wrought without any matter
@@ -241,6 +243,7 @@ Let there be heaven
 
 and þærrihte wæs heofen geworht, swa swa he mid his wisdome and mid his willan hit gedihte
 and instantly heaven was made, as he with his wisdom and his will had appointed it
+0 0 1 1 2 3 3 2 4 4 5 5.6 6 7 7 8 8 9 9 10 10 11 11 13 12 14 13 15 14 14
 
 He cwæð eft, and het ða eorðan þæt heo sceolde forðlædan cuce nytenu, and hé ða gesceop of ðære eorðan eall nytencynn, and deorcynn, ealle ða ðe on feower fotum gað
 He said again, and bade the earth bring forth all living cattle, and he then created of earth all the race of cattle, and the brute race, all those which go on four feet
@@ -253,9 +256,11 @@ but he gave no soul to any beast, nor to any fish
 
 ac heora blod is heora lif, and swa hraðe swa hi beoð deade, swa beoð hí mid ealle geendode
 but their blood is their life, and as soon as they are dead they are totally ended
+0 0 1 1 2 2 3 3 4 4 5 5 6 6 7 7 8 8 9 9 10 10 11 11 12 12 13 15 14 14 15 16.17 16 18
 
 Þaða he worhte ðone mann Adám, he ne cwæð ná
 When he had made the man Adam, he did not say
+0 0 1 1 3 2.3 5 4 6 5 7 6 9 7 10 8
 
 Geweorðe man geworht
 Let man be made
@@ -267,15 +272,18 @@ but he said
 
 Uton gewyrcan mannan to ure anlicnysse
 Let us make man in our likeness
+1 0 2 1 3 2 4 3 5 4 6 5
 
 and hé worhte ða þone man mid his handum, and him on ableow sawle
 and he then made man with his hands, and blew into him a soul
+0 0 1 1 2 3 3 2.4 5 6 6 7 7 8 8 9 9 12 10 11 11 10 13 13
 
 forði is se man betera, gif hé góde geðihð, þonne ealle ða nytenu sindon
 therefore is man better, if he grow up in good, than all the beasts are
 
 forðan ðe hí ealle gewurðað to nahte, and se man is ece on anum dæle, þæt is on ðære sawle
 because they will all come to naught, and man is in one part eternal, that is in the soul
+0 0.1 1 2 3 3 4 4 5 5 6 6 7 8 8 9 9 11 10 12 11 13 12 10 14 15 15 16 16 17 18 18
 
 heo ne geendað næfre
 that will never end
@@ -286,6 +294,7 @@ The body is mortal through Adam's sin, but, nevertheless, God will raise again t
 
 Nu cwædon gedwolmen þæt deofol gesceope sume gesceafta, ac hí leogað
 Now the heretics say that the devil created some creatures, but they lie
+0 0 2 1 3 2 4 3 5 4 7 5 8 6 9 7 10 8 11 9 12 10
 
 ne mæg hé nane gesceafta gescyppan, forðan ðe he nis na Scyppend, ac is atelic sceocca, and mid leasunge he wile beswican and fordón þone unwaran
 he can create no creatures, for he is not a creator, but is a loathsome fiend, and with leasing he will deceive and fordo the unwary
@@ -301,9 +310,11 @@ When the devil understood that Adam and Eve were created, that they might with m
 
 He com ða on næddran hiwe to þam twam mannum, ærest to ðam wife, and hire to cwæð
 He came then in a serpent's form to the two persons, first to the woman, and said to her
+0 0 1 1 2 2 3 3 5 4 6 5 7 6 9 8 10 9 11 10 12 11 13 12 14 13 15 14 16 17 17 16 18 15
 
 Hwí forbead God eow þæs treowes wæstm, ðe stent on middan neorxna-wange
 Why has God forbidden you the fruit of this tree, which stands in the middle of Paradise
+0 0 2 2 3 1 4 3 7 6 8 5 9 5 10 7 11 8 12 9 14 10 16 11
 
 Þa cwæð þæt wíf
 Then said the woman
@@ -335,6 +346,7 @@ and they were naked, and thereat they were ashamed
 
 Þa com God and axode hwi he his bebod tobræce
 Then came God and asked why he had broken his commandment
+0 0 1 1 2 2 3 3 4 4 5 5 6 6 8 8 9 7 10 9
 
 and adræfde hí butu of neorxna-wange, and cwæð
 and drove them both from Paradise, and said
