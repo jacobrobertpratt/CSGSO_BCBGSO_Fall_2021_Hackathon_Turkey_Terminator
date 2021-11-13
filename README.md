@@ -41,6 +41,20 @@ Overall, the Decision Tree was used as a compromise between execution time and a
 I set out at the beginning of this hackathon to create a translator from modern english to old english.
 And I believe that I succeeded. But don't take my word for it, see for yourself.
 
+## Future Works
+
+If I had the time, I would have liked to do this with a real neural network. But first and foremost,
+the dataset that I had was incomplete, I was only able to prepare a corpus of ~1000 words, when I definitely
+had more than 500k available. In order to finish the project in time, I had to do two things:
+1. Reduce the corpus size, this is why the lines are in the [reduced_phrases.txt](./data/reduced_phrases.txt) and not in [more_phrases.txt](./data/more_phrases.txt).
+2. I had to accept that I wasn't going to have enough time to index all of the words in all of the phrases, so I did the ones that I could the ones that are complete,
+as well as the ones that are not ar ein [reduced_phrases_w_indices.txt](./data/reduced_phrases_w_indices.txt).
+
+To fix this, the rest of the corpus needs to be filled in, fixing typos in the phrases document, figuring out how to get them to line up.
+Usually this is just replacing `;` with `,` and vice versa. The only issue is that it takes a lot of time to prepare them,
+and it's tedious to do alone. I had some help, and I'd like to thank Henlee and Aidan for keeping me company
+whilst I worked.
+
 ## Installation
 ### Prerequisits
 You'll need a python environment with the following packages
