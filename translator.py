@@ -111,6 +111,12 @@ def read_word_embeddings(path: pathlib.Path) -> Dict[str, List[float]]:
     return result
 
 
+def generate_phrase_objects(emb_path: pathlib.Path, index_path: pathlib.Path) -> List[Phrase]:
+    create_word_embeddings(emb_path, './data/embedded_phrases.csv')
+    embeddings = read_word_embeddings('./data/embedded_phrases.csv')
+    return read_indices(index_path, embeddings)
+
+
 if __name__ == '__main__':
     phrases = read_phrases('./data/phrases.txt')
     write_phrases(phrases, './data/more_phrases.txt')
