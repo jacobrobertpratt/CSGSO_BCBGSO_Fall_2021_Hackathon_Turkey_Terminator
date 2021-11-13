@@ -103,16 +103,17 @@ def read_word_embeddings(path: pathlib.Path) -> Dict[str, List[float]]:
     result = {}
     with open(path, 'rb') as fp:
         lines = (fp.read()).decode('utf8').split('\n')
-        for line in lines:
-            segs = line.split(',')
-            embedding = list(map(float, segs[-512:]))
-            sentence = ','.join(segs[:-512])
-            result[sentence] = embedding
+        for line in tqdm(lines, desc="Reading word embeddings"):
+            if len(line) > 3:
+                segs = line.split(',')
+                embedding = list(map(float, segs[-512:]))
+                sentence = ','.join(segs[:-512])
+                result[sentence] = embedding
     return result
 
 
 def generate_phrase_objects(emb_path: pathlib.Path, index_path: pathlib.Path) -> List[Phrase]:
-    create_word_embeddings(emb_path, './data/embedded_phrases.csv')
+    # create_word_embeddings(emb_path, './data/embedded_phrases.csv')
     embeddings = read_word_embeddings('./data/embedded_phrases.csv')
     return read_indices(index_path, embeddings)
 
