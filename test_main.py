@@ -1,11 +1,12 @@
 import pickle
 import re
-from translator import embed, Phrase
+from translator import Phrase
+from embeddings import embed
 import numpy as np
 
 
 if __name__ == '__main__':
-    model_name = './models/ada_boost.sav'
+    model_name = './models/knn.sav'
     with open(model_name, 'rb') as fp:
         model = pickle.load(fp)
     sentences = re.split(r'[.;"]', input('What to translate? '))

@@ -2,10 +2,6 @@ import pathlib
 from typing import List, Tuple, Dict
 from tqdm import tqdm
 import re
-import tensorflow_hub as hub
-
-
-embed = hub.load("https://tfhub.dev/google/universal-sentence-encoder-large/5")
 
 
 class Phrase:
@@ -38,8 +34,14 @@ class Phrase:
 
     @staticmethod
     def vec2word(v: List[float]) -> str:
-        b = bytes(map(int, [vt for vt in v if vt > 0])).decode('utf8')
-        return b
+        b = []
+        for vt in v:
+            if vt > 0:
+                try:
+                    b.append(bytes([int(vt)]).decode('utf8'))
+                except UnicodeDecodeError:
+                    b.append('?')
+        return ''.join(b)
 
     @staticmethod
     def get_feature_vector(w: str, embed: List[float], index: int) -> List[float]:
@@ -100,18 +102,6 @@ def read_indices(path: pathlib.Path, embeddings: Dict[str, List[float]]) -> List
                 edges[src] = trgt
             result.append(Phrase(ne_sentence, edges, embeddings[ne_sentence], oe_sentence))
     return result
-
-
-def create_word_embeddings(path: pathlib.Path, outpath: pathlib.Path):
-    phrases = read_phrases(path)
-    ne = [p[1] for p in phrases]
-    embeddings = embed(ne)
-    lines = []
-    for sentence, embedding in tqdm(zip(ne, embeddings)):
-        line = (sentence + ',' + ','.join(map(str, embedding)) + '\n').replace('tf.Tensor(', '').replace(', shape=(), dtype=float32)', '')
-        lines.append(line.encode('utf8'))
-    with open(outpath, 'wb+') as fp:
-        fp.writelines(lines)
 
 
 def read_word_embeddings(path: pathlib.Path) -> Dict[str, List[float]]:

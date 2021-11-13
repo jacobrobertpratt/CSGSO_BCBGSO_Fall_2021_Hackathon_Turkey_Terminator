@@ -3,7 +3,8 @@ from PyQt5.QtWidgets import QApplication, QLabel, QWidget, QPushButton, QTextEdi
 import pickle
 import re
 import numpy as np
-from translator import embed, Phrase
+from translator import Phrase
+from embeddings import embed
 
 
 def main_window(m):
