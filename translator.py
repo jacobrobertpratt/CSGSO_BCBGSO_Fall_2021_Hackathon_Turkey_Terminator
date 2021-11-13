@@ -43,8 +43,8 @@ class Phrase:
             return ' '.join([words[e] for e in self.edges[edge]])
         return ''
 
-    def to_array(self, word: int) -> List[float]:
-        return self.word2vec(self[word]) + self.embedding + [float(word)]
+    def to_array(self, word: int) -> Tuple[List[float], List[float]]:
+        return self.word2vec(self[word]) + self.embedding + [float(word)], self.word2vec(self.translate(word))
 
 
 def read_phrases(path: pathlib.Path) -> List[Tuple[str, str]]:
