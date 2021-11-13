@@ -20,6 +20,16 @@ class Phrase:
     def __repr__(self):
         return '{} <- {}'.format(self.ne, self.oe)
 
+    def __getitem__(self, item: int) -> str:
+        return self.ne.split()[item]
+
+    @staticmethod
+    def word2vec(w: str) -> List[float]:
+        b = w.encode('utf8')
+        if len(b) > Phrase.max_word_length:
+            b = b[:Phrase.max_word_length]
+        return list(map(float, b))
+
     def get_words(self) -> List[Tuple[int, str]]:
         result = []
         words = self.ne.split()
@@ -34,7 +44,7 @@ class Phrase:
         return ''
 
     def to_array(self, word: int) -> List[float]:
-        
+        return self.word2vec(self[word]) + self.embedding + [float(word)]
 
 
 def read_phrases(path: pathlib.Path) -> List[Tuple[str, str]]:
