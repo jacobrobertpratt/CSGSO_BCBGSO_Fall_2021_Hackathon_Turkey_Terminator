@@ -1,4 +1,5 @@
 from translator import generate_phrase_objects, Phrase
+from decisiontree import LetterClassifier
 from typing import List, Tuple
 from tqdm import tqdm
 from sklearn import tree, neighbors, ensemble
@@ -31,7 +32,7 @@ def train_decision_tree(train: Tuple[List[List[float]], List[List[float]]],
                         test: Tuple[List[List[float]], List[List[float]]]):
     trainx, trainy = train
     print('Decision Tree model:')
-    model = tree.DecisionTreeRegressor()
+    model = LetterClassifier(tree.DecisionTreeClassifier())
     print('Fitting Model...')
     model = model.fit(trainx, trainy)
     print('Training Accuracy: {}%'.format(model.score(trainx, trainy) * 2))
@@ -43,7 +44,7 @@ def train_decision_boost(train: Tuple[List[List[float]], List[List[float]]],
                          test: Tuple[List[List[float]], List[List[float]]]):
     trainx, trainy = train
     print('AdaBoost Decision Tree model:')
-    model = ensemble.AdaBoostRegressor(tree.DecisionTreeRegressor())
+    model = LetterClassifier(ensemble.AdaBoostClassifier(tree.DecisionTreeClassifier()))
     print('Fitting Model...')
     model = model.fit(trainx, trainy)
     print('Training Accuracy: {}%'.format(model.score(trainx, trainy) * 2))
