@@ -300,12 +300,15 @@ Why has God forbidden you the fruit of this tree, which stands in the middle of 
 
 Þa cwæð þæt wíf
 Then said the woman
+0 0 1 1 2 2 3 3
 
 God us forbead þæs treowes wæstm, and cwæð þæt we sceoldon deaðe sweltan, gif we his on byrigdon
 God forbade us the fruit of the tree and said, that we should perish by death, if we tasted its fruit
+0 0 1 2 2 1 3 3 4 5 7 4 8 6 9 7 10 8 11 9 12 10 13 12 15 11 16 13 17 14
 
 Ða cwæð se deofol
 Then said the devil
+0 0 1 1 2 2 3 3
 
 Nis hit na swa ðu segst, ac God wát genoh geare, gif ge of ðam treowe geetað, þonne beoð eowere eagan geopenode, and ge magon geseon and tocnáwan ægðer ge gód ge yfel, and ge beoð englum gelice
 It is not as thou sayest, but God knows full well, if ye eat of that tree that your eyes will then be opened, and ye can see and know both good and evil, and ye will be like to angels
@@ -321,6 +324,7 @@ Then they both became mortal, and knew both good and evil
 
 and hí wæron ða nacode, and him ðæs sceamode
 and they were naked, and thereat they were ashamed
+0 0 1 1 2 2 3 4 4 5 6 6 7 7 8 8
 
 Þa com God and axode hwi he his bebod tobræce
 Then came God and asked why he had broken his commandment
@@ -387,6 +391,7 @@ whether from the father or from the mother
 
 We cweðað of heora naðrum
 We say, from neither of them
+0 0 1 1 2 2 3 4 5 3
 
 ac se ylca God þe gesceop Adam mid his handum, he gescypð ælces mannes lichaman on his modor innoðe: and se ylca seðe ableów on Adámes lichaman, and him forgeaf sawle, se ylca forgyfð cildum sawle and líf on heora modor innoðe, þonne hí gesceapene beoð
 but the same God who created Adam with his hands, createth every man's body in his mother's womb: and the same who blew into Adam's body, and gave him a soul, that same giveth a soul and life to children in their mother's womb, when they are created
@@ -405,6 +410,7 @@ Nevertheless, there was one man righteous before God, who was called Noah
 
 Þa cwæð God to him
 Then said God to him
+0 0 1 1 2 2 3 3 4 4
 
 Ic wylle fordón eal mancynn mid wætere, for heora synnum, ac ic wylle gehealdan þe ænne, and þin wíf, and þine þry suna, Sem, and Cham, and Iafeth, and heora þreo wíf
 I will destroy all mankind with water, for their sins, but I will preserve thee alone, and thy wife, and thy three sons, Shem, and Ham, and Japhet, and their three wives
@@ -591,6 +597,7 @@ Men most beloved, consider this discourse, and with great care eschew unrighteou
 
 Amen
 Amen
+0 0
 
 We wyllað to trymminge eowres geleafan eow gereccan þæs Hælendes acennednysse be ðære godspellican endebyrdnysse: hú he on ðysum dægðerlicum dæge on soðre menniscnysse acenned wæs on godcundnysse
 We will, for the confirmation of your faith, relate to you the nativity of our Saviour, according to the order of the gospel: how he on this present day was born in true humanity in divine nature
@@ -615,6 +622,7 @@ and lo, the angel of God stood before them, and God's brightness shone on them, 
 
 Ða cwæð se Godes engel to ðam hyrdum
 Then said the angel of God to the shepherds
+0 0 1 1 2 2 3 4 5 3 6 5 7 6 8 7
 
 Ne ondredað eow, efne ic eow bodige micelne gefean, þe becymð eallum folce
 Fear not, lo, I announce to you great joy, which shall come to all people
@@ -628,17 +636,16 @@ Ye shall see this token, ye shall find the child wrapped in swaddling clothes, a
 Þa færlice, æfter þæs engles spræce, wearð gesewen micel menigu heofenlices werodes God herigendra and singendra
 Then suddenly, after the angel's speech, there was seen a great multitude of the heavenly host, praising God and singing
 
-Gloria in excelsis Deo, et in terra pax hominibus bone uoluntatis
-Gloria in excelsis Deo, et in terra pax hominibus bonæ voluntatis
-
 þæt is on urum gereorde
 that is in our tongue
+0 0 1 1 2 2 3 3 4 4
 
 Sy wuldor Gode on heannyssum, and on eorðan sibb mannum, þam ðe beoð godes willan
 Glory to God in the highest, and on earth peace to men who are of good will
 
 And ða englas ða gewiton of heora gesihðe to heofonum
 And the angels then withdrew from their sight to heaven
+0 0 1 1 2 2 3 3 4 4 5 5 6 6 7 7 8 8
 
 Hwæt ða hyrdas þa him betweonan spræcon
 The shepherds then spake among themselves
@@ -759,6 +766,7 @@ Oftentimes, in the ancient law, angels appeared to men, but it is not written th
 
 Se engel cwæð to þam hyrdum
 The angel said to the shepherds
+0 0 1 1 2 2 3 3 4 4 5 5
 
 Ne beo ge afyrhte, efne ic bodige eow micelne gefean, ðe eallum folce becymð, forðan þe nu to-dæg is acenned Hælend Crist on Dauides ceastre
 Be ye not afraid, lo, I announce to you great joy, which shall come to all people, for to-day is born a Saviour Christ in the city of David
@@ -771,6 +779,7 @@ for Christ's nativity gladdened the inhabitants of heaven, and of earth, and of 
 
 Se engel cwæð
 The angel said
+0 0 1 1 2 2
 
 Nu to-dæg is eow acenned Hælend Crist on Dauides ceastre
 Now to-day is born to you a Saviour Christ, in the city of David
@@ -792,6 +801,7 @@ An angel announced to the shepherds the heavenly King's nativity, and suddenly a
 
 Hí sungon
 They sung
+0 0 1 1
 
 Sy wuldor Gode on heannyssum, and on eorðan sibb mannum, ðam ðe beoð godes willan
 Be glory to God in the highest, and on earth peace to men, to those who are of good will
@@ -816,6 +826,7 @@ But in the ancient law, Lot, and Joshua, and certain others who saw angels, bowe
 
 Beheald þæt ðu ðas dæde ne dó
 See that thou do not this deed
+0 0 1 1 2 2 3 3 4 4 5 5 6 6
 
 ic eom ðin efen-ðeowa, and ðinra gebroðra
 I am thy fellow-servant, and of thy brethren: pray to God only
@@ -834,6 +845,7 @@ let us, therefore, take care that sins do not separate us from this great dignit
 
 Soðlice men syndon godas gecigede
 Verily men are called gods
+0 0 1 1 2 2 3 4 4 3
 
 heald forði, ðu mann, þinne godes wurðscipe wið leahtras
 preserve, therefore, thou man, thy dignity of a god against sins, since God became man for thee
@@ -876,6 +888,7 @@ As every man existeth in soul and in body one man, so also Christ existeth in di
 
 Hí cwædon
 They said
+0 0 1 1
 
 Uton geseon þæt word þe geworden is
 Let us see the word that is come to pass
@@ -948,6 +961,7 @@ It was prophesied that he should be born in the city of Bethlehem, and she great
 
 Heo gemunde hwæt sum witega cwæð
 She remembered that a prophet had said
+0 0 1 1 2 2 3 3 4 4 6 5
 
 Se oxa oncneow his hlaford, and se assa his hlafordes binne
 The ox knows his master, and the ass his master's bin
@@ -972,6 +986,7 @@ We should imitate these shepherds, and glorify and praise our Lord for all those
 
 Amen
 Amen
+0 0
 
 We rædað on ðære béc þe is geháten Actus Apostolorum, þǽt ða apostolas gehádodon seofon diaconas on ðære gelaðunge þe of Iudeiscum folce to Cristes geleafan beah, æfter his ðrowunge, and ǽriste of deaðe, and upstige to heofenum
 We read in the book which is called The Acts of the Apostles, that the apostles ordained seven deacons in the congregation which, from among the Jewish people, had turned to Christ's faith, after his passion, and resurrection from death, and ascension to heaven
@@ -1017,9 +1032,11 @@ Then looked on him they who sate in the council, and saw his countenance like th
 
 Ða cwæð se ealdor-biscop to ðam eadigan cyðere
 Then said the chief priest to the blessed martyr
+0 0 1 1 2 2 4 3 5 4 6 5 7 6 8 7
 
 Is hit swa hí secgað
 Is it as they say
+0 0 1 1 2 2 3 3 4 4
 
 Ða wolde se halga wer Stephanus heora ungeleaffullan heortan gerihtlæcan mid heora forðfædera gebysnunge}} and gemynde, and to soðfæstnysse wege mid ealre lufe gebigan
 Then would the holy man Stephen rectify their unbelieving hearts with the example and remembrance of their forefathers, and, with all love, incline them to the way of truth
@@ -1041,6 +1058,7 @@ and of David the great king's greatness, and of Solomon's glory, who the great t
 
 Cwæð þa æt nextan
 At last he said
+0 0 1 1 2 2 3 3
 
 Ge wiðstandað þam Halgum Gaste mid stiðum swuran, and ungeleaffulre heortan
 Ye withstand the Holy Ghost with stiff neck and unbelieving heart
@@ -1059,6 +1077,7 @@ But the holy Stephen was filled with the Holy Ghost, and looked towards heaven, 
 
 and he cwæð
 and he said
+0 0 1 1 2 2
 
 Efne ic geseo heofenas opene, and mannes Sunu standende æt Godes swiðran
 Behold, I see the heavens open, and the Son of man standing at the right hand of God
@@ -1074,9 +1093,11 @@ They then begun to stone with hard stones the blessed Stephen
 
 and hé clypode, and cwæð
 and he cried, and said
+0 0 1 1 2 2 3 3 4 4
 
 Drihten Hǽlend, onfóh minne gast
 Lord Jesus, receive my spirit
+0 0 1 1 2 2 3 3 4 4
 
 And gebigde his cneowu, mid micelre stemne clypigende
 And he bowed his knees, crying with a loud voice
@@ -1230,6 +1251,7 @@ Be mindful what Truth itself has promised in the holy gospel, and what pledge it
 
 Se Hælend cwæð
 Jesus said
+0 1 1 2
 
 Gif ge forgyfað þam mannum þe wið eow agyltað, þonne forgyfð eow eower Fæder eowere synna: gif ge ðonne nellað forgyfan, nele eac eower Fæder eow forgifan eowere gyltas
 If ye forgive those men who sin against you, then will your heavenly Father forgive you your sins: but if ye will not forgive, your Father will not forgive you your sins
@@ -1239,9 +1261,11 @@ Ye hear now, my brethren, that it stands, through God's grace, at our own option
 
 He cwæð
 He said
+0 0 1 1
 
 Gif ge forgyfað, eow bið forgyfen
 If ye forgive, ye shall be forgiven
+0 0 1 1 2 2 3 3 5 4 6 5
 
 Ne bepæce nán man hine sylfne: witodlice gif hwa furðon ænne man hatað on ðisum middangearde, swa hwæt swa he to góde gedéð, eal he hit forlyst
 Let no man deceive himself: verily if any one hate a man in this world, whatever good he may have done, he loses it all
@@ -1260,6 +1284,7 @@ He who loveth not his brother continueth in death
 
 Eft hé cwæð
 Again he said
+0 0 1 1 2 2
 
 Ælc ðæra þe his broðor hatað is manslaga
 Every one who hateth his brother is a murderer
@@ -1267,14 +1292,13 @@ Every one who hateth his brother is a murderer
 Ealle we sind gebroðra þe on God gelyfað, and we ealle cweðað
 We are all brothers who believe in God, and we all say
 
-Pater noster qui es in celis
-Pater noster qui es in cœlis
-
 þæt is
 that is
+0 0 1 1
 
 Ure Fæder þe eart on heofonum
 Our Father who art in heaven
+0 0 1 1 2 2 3 3 4 4 5 5
 
 Ne gedyrstlæce nan man be mægðhade, butan soðre lufe
 Let no man presume on kinship without true love
@@ -1323,6 +1347,7 @@ Verily by love of thy foe thou art the friend of God, and not only art thou his 
 
 swa swa Crist sylf cwæð
 as Christ himself hath said
+0 0 1 2 2 3 4 4
 
 Lufiað eowere fynd, doð þam tela þe eow hatiað, þæt ge beon eoweres Fæder cild, seðe on heofenum is
 Love your enemies, do good to those who hate you, that ye be your Father's children, who is in heaven
@@ -1332,9 +1357,11 @@ Many hardships and contumelies any one would easily endure that he might be acco
 
 We secgað eow Godes riht
 We tell you God's law
+0 0 1 1 2 2 3 3 4 4
 
 healdað gif ge willon
 hold it if ye will
+0 0 2 1 3 2 4 3
 
 Gif we hit forsuwiað, ne bið us geborgen
 If we kept it in silence, we should not be secure
@@ -1377,15 +1404,18 @@ Stephen ascended, through his blood with glory crowned
 
 Gyrstan-dæg sungon englas
 Yesterday angels sung
+0 0 1 2 2 1
 
 Gode wuldor on heannyssum
 Glory to God in the highest
+0 1 2 0 3 2 5 3
 
 nu to-dæg hí underfengon Stephanum blissigende on heora geferrædene, mid þam hé wuldrað and blissað á on ecnysse
 now to-day they received Stephen rejoicing in their fellowship, with whom he glorieth and rejoiceth to all eternity
 
 Amen
 Amen
+0 0
 
 Iohannes se Godspellere, Cristes dyrling, wearð on ðysum dæge to heofenan rices myrhðe, þurh Godes neosunge, genumen
 John the Evangelist, Christ's darling, was on this day, through God's visitation, taken to the joy of the kingdom of heaven
@@ -1449,6 +1479,7 @@ As the apostle John was entering the city of Ephesus, there was borne towards hi
 
 hire nama wæs Drusiana
 her name was Drusiana
+0 0 1 1 2 2 3 3
 
 Heo wæs swiðe gelyfed and ælmesgeorn, and þa ðearfan, ðe heo mid cystigum mode eallunga afedde, dreorige mid wópe ðam líce folgodon
 She was of great faith, and gave much in alms, and the poor, whom she had bountifully fed, sad, with weeping, followed the corpse
@@ -1458,9 +1489,11 @@ Then the apostle bade them set down the bier, and said
 
 Min Drihten, Hælend Crist
 My Lord, Jesus Christ
+0 0 1 1 2 2 3 3
 
 Arære ðe, Drusiana
 Raise thee, Drusiana
+0 0 1 1 2 2
 
 aris, and gecyrr ham, and gearca ús gereordunge on þinum huse
 arise, and return home, and prepare refection for us in thy house
@@ -1542,6 +1575,7 @@ They did as he had commanded, and he in God's name blessed the green rods, and t
 
 Eft cwæð se apostol Iohannes
 Again the apostle said
+0 0 1 2 2 3 3 1
 
 Gað to ðære sǽ-strande, and feccað me papolstanas
 Go now to the sea-strand, and fetch me pebble-stones
@@ -1551,18 +1585,21 @@ They did so, and John by God's majesty blessed them, and they were turned to pre
 
 Þa cwæð se apostol
 Then said the apostle
+0 0 1 1 2 2 3 3
 
 Gað to smiððan, and fandiað þises goldes and ðissera gymstana
 Go to the smithy, and try this gold and these gems
 
 Hí ða eodon, and eft comon, þus cweðende
 They went, and came again, thus saying
+0 0.1 1 2 2 3 3 5 4 3 5 6 6 7
 
 Ealle ðas goldsmiðas secgað þæt hí næfre ær swa clæne gold, ne swa read ne gesawon: eac ðas gym-wyrhtan secgað þæt hi næfre swa deorwurðe gymstanas ne gemetton
 All the goldsmiths say that they have never before seen such pure and such red gold: also the jewellers say that they have never before met with such precious gems
 
 Þa cwæð se apostol him to
 Then said the apostle to them
+0 0 1 1 2 2 3 3 4 5 5 4
 
 Nimað þis gold, and ðas gymstanas, and farað, and bicgað eow land-áre, forðan þe ge forluron ða heofenlican speda
 Take this gold and these gems, and go and buy landed property, seeing that ye have lost heavenly riches
@@ -1590,12 +1627,14 @@ The devils stood in so great awe of you, that at your behest they forsook the po
 
 nu ge ondrædað eow deoflu
 now ye yourselves dread devils
+0 0 1 1 3 2 2 3 4 4
 
 Þa heofenlican æhta sind us eallum gemæne
 The heavenly possessions are common to us all
 
 Nacode we wæron acennede, and nacode we gewitað
 Naked we were born, and naked we depart
+0 0 1 1 2 2 3 3 4 4 5 5 6 6 7 7
 
 Þære sunnan beorhtnys, and þæs monan leoht, and ealra tungla sind gemæne þam rican and ðam heanan
 The brightness of the sun, and the light of the moon, and of all the stars are common to the high and the low
@@ -1608,6 +1647,7 @@ The covetous hath one body and divers garments
 
 he hæfð ane wambe, and þusend manna bigleofan
 he hath one belly and a thousand men's sustenance
+0 0 1 1 2 2 3 3 4 4 6 5 7 6 8 7
 
 witodlice þæt he for gytsunge úncyste nanum oðrum syllan ne mæg, þæt he hordað, and nat hwam, swa swa se witega cwæð, 'On ídel bið ælc man gedrefed, seðe hordað, and nat hwam he hit gegaderað
 but that which he, through the vice of avarice, cannot give to any other, he hoardeth, and knoweth not for whom, as the prophet said, Vainly is every man troubled who hoardeth, and knoweth not for whom he gathereth
@@ -1620,6 +1660,7 @@ and in addition thereto, diseases of his body increase, so that he may not enjoy
 
 Hé carað dæges and nihtes þæt his feoh gehealden sy
 He cares night and day that his money be preserved
+0 0 1 1 2 4 3 3 4 2 5 5 6 6 7 7
 
 hé gymð grædelice his teolunge, his gafoles, his gebytlu
 he attends greedily to his gain, his rent, his buildings
@@ -1650,9 +1691,11 @@ O thou youth, who through thy flesh's lust hast early lost thy soul
 
 eala þu cniht, þu ne cuðest ðinne Scyppend
 O thou youth, thou knewest not thy Creator
+0 0 1 1 2 2 3 3 5 4 4 5 6 6 7 7
 
 þu ne cuðest manna Hælend
 thou knewest not the Saviour of men
+0 0 1 2 2 1 6 3 4 4
 
 þu ne cuðest ðone soðan freond, and forði þu beurne on þone wyrstan feond
 thou knewest not the true friend, and hast therefore fallen on the worst enemy
@@ -1692,6 +1735,7 @@ The sin which we have committed with covetous eyes, we now with weeping eyes rep
 
 Ða andwyrde se apostol
 Then answered the apostle
+0 0 1 1 2 2 3 3
 
 Berað ða gyrda to wuda, and þa stanas to sǽ-strande: hi synd gecyrrede to heora gecynde
 Bear the rods to the wood, and the stones to the sea-strand: they shall be restored to their nature
@@ -1722,15 +1766,18 @@ and after the fast he was so greatly filled with the spirit of God, that he exce
 
 In principio erat uerbum, et reliqua
 In principio erat verbum, etc
+0 0 1 1 2 2 3 3.4
 
 þæt is on Englisc
 that is in English
+0 0 1 1 2 2 3 3
 
 On frymðe wæs word, and þæt word wæs mid Gode, and þæt word wæs God
 In the beginning was the word, and the word was with God, and the word was God
 
 þis wæs on frymðe mid Gode
 this was in the beginning with God
+0 0 1 1 2 2 4 3 5 4 6 5
 
 ealle ðing sind þurh hine geworhte, and nis nan þing buton him gesceapen
 all things are made through him, and without him nothing is created
@@ -1752,6 +1799,7 @@ Go all together to God's church, and call all of you to your gods that, through 
 
 ðonne buge ic to eowerum hæðenscipe
 then will I turn to your heathenship
+0 0 3 1 2 2 4 3 5 4 6 5
 
 Gif ðonne eower godes miht þa halgan cyrcan towurpan ne mæg, ic towurpe eower tempel þurh ðæs Ælmihtigan Godes mihte, and ic tocwyse eower deofolgyld
 But if the power of your god may not cast down the holy church, I will cast down your temple, through the might of the Almighty God, and I will crush your idol
@@ -1779,18 +1827,21 @@ But the chief idolater still refused with great perverseness, and said that he w
 
 Þa cwæð se apostol
 Then said the apostle
+0 0 1 1 2 2 3 3
 
 Þeah þu me attor sylle, þurh Godes naman hit me ne derað
 Though thou give me poison, through God's name it shall not hurt me
 
 Ða cwæð se hæðengylda Aristodemus
 Then said the idolater Aristodemus
+0 0 1 1 2 2 3 3 4 4
 
 Þu scealt ærest oðerne geseon drincan, and ðærrihte cwelan, þæt huru ðin heorte swa forhtige for ðam deadbærum drence
 Thou shalt first see another drink it, and instantly die, that so at least thy heart may fear the death-bearing drink
 
 Iohannes him andwyrde
 John answered him
+0 0 1 2 2 1
 
 Gif ðu on God gelyfan wylt, ic unforhtmod ðæs drences onfó
 If thou wilt believe in God, I will fearless receive this drink
@@ -1812,15 +1863,18 @@ There is one true God, whom John worshippeth
 
 Þa cwæð se hæðengylda to ðam apostole
 Then said the idolater to the apostle
+0 0 1 1 2 2 3 3 4 4 5 5 6 6
 
 Gyt me tweonað
 Yet I doubt
+0 0 1 1 2 2
 
 ac gif ðu ðas deadan sceaðan, on ðines Godes naman arærst, þonne bið min heorte geclænsod fram ælcere twynunge
 but if thou, in the name of thy God, wilt raise up these dead thieves, then will my heart be cleansed from every doubt
 
 Ða cwæð Iohannes
 Then said John
+0 0 1 1 2 2
 
 Aristodeme, nim mine tunecan, and lege bufon ðæra deadra manna lic, and cweð, 'Þæs Hælendes Cristes apostol me asende to eow, þæt ge on his naman of deaðe arison, and ælc man oncnáwe þæt deað and líf ðeowiað minum Hælende
 Aristodemus, take my tunic, and lay it on the corpses of the dead men, and say, 'The apostle of Jesus Christ hath sent me to you, that ye in his name may arise from death, and that every man may know that death and life minister to my Saviour
@@ -1842,6 +1896,7 @@ When the apostle was ninety-nine years old the Lord Christ appeared to him with 
 
 Iohannes, cum to me
 John, come to me
+0 0 1 1 2 2 3 3
 
 tima is þæt þu mid ðinum gebroðrum wistfullige on minum gebeorscipe
 it is time that thou with thy brethren shouldst feast at my banquet
@@ -1851,6 +1906,7 @@ John then arose, and went towards Jesus
 
 ac he him to cwæð
 But he said to him
+0 0 1 1 2 2 3 3 4 4
 
 Nu on sunnan-dæg, mines æristes dæge, þu cymst to me
 Lo, on Sunday, the day of my resurrection, thou shalt come to me
@@ -1881,6 +1937,7 @@ Thou hast set in my mouth the word of thy truth, and I have written down the lor
 
 Nu ic ðe betæce, Drihten
 Now I commit to thee, Lord
+0 0 1 1 2 3 4 2 5 4
 
 þine bearn, ða ðe þin gelaðung, mæden and moder, þurh wæter and þone Halgan Gast, ðe gestrynde
 thy children, those which thy church, maiden and mother, through water and the Holy Ghost have gained to thee
@@ -1899,6 +1956,7 @@ Thee we praise and thank for thy manifold benefits throughout the world eternal
 
 Amen
 Amen
+0 0
 
 Æfter ðysum gebede æteowode heofenlic leoht bufon ðam apostole, binnon ðære byrgene, ane tid swa beorhte scinende, þæt nanes mannes gesihð þæs leohtes leoman sceawian ne mihte
 After this prayer a heavenly light appeared above the apostle, within the grave, shining for an hour so bright, that no man's sight might look on the rays of light
@@ -1926,6 +1984,7 @@ This hath the Lord Christ granted unto him, to whom is glory and honour with the
 
 Amen
 Amen
+0 0
 
 Nu to-dæg Godes gelaðung geond ealne ymbhwyrft mærsað þæra eadigra cildra freols-tide, þe se wælhreowa Herodes for Cristes acennednysse mid arleasre ehtnysse acwealde, swa swa us seo godspellice racu swutellice cyð
 Now to-day God's church throughout all the globe celebrates the festival of the blessed children whom the cruel Herod, on account of the birth of Christ, slew in impious persecution, as the evangelical narrative manifestly makes known to us
@@ -2214,6 +2273,7 @@ The child then dwelt in the city which is called Nazareth, that the prophecy mig
 
 Se engel cwæð to Iosepe
 The angel said to Joseph
+0 0 1 1 2 2 3 3 4 4
 
 Þa sind forðfarene, þe embe ðæs cildes feorh syrwdon
 They are dead who machinated against the child's life
@@ -2235,18 +2295,21 @@ and they stand before his throne, without any impurity, having their palm-twigs 
 
 Amen
 Amen
+0 0
 
 Se Godspellere Lucas beleac þis dægþerlice godspel mid feawum wordum, ac hit is mid menigfealdre mihte þære heofenlican gerynu afylled
 The evangelist Luke concluded the gospel of this day with few words, but they are filled with a manifold power of the heavenly mysteries
 
 He cwæð
 He said
+0 0 1 1
 
 Postquam consummati sunt dies octo ut circumcideretur puer, uocatum est nomen ejus Iesus, quod uocatum est ab angelo, priusquam in utero conciperetur
 Postquam consummati sunt dies octo ut circumcideretur puer, vocatum est nomen ejus Jesus, quod vocatum est ab angelo, priusquam in utero conciperetur
 
 Þæt is on ure geðeode
 That is in our tongue
+0 0 1 1 2 2 3 3 4 4
 
 Æfter þan ðe wǽron gefyllede ehta dagas Drihtnes acennednysse þæt he ymbsniden wære, þa wæs his nama geciged Iesus, þæt is Hælend, ðam naman he wæs geháten fram ðam engle, ærðam þe hé on innoðe geeacnod wære
 After that the eight days were accomplished from the Lord's birth, that he should be circumcised, his name was called Jesus, that is Saviour, by which name he was called by the angel before he was conceived in the womb
@@ -2259,9 +2322,11 @@ Abraham spake with God, and God held converse most with him after Noah's flood, 
 
 Ic eom Ælmihtig Drihten
 I am the Lord Almighty
+0 0 1 1 3 3 4 2
 
 gang beforan me, and beo fulfremed
 walk before me and be perfect
+0 0 1 1 2 2 3 3 4 4 5 5
 
 And ic sette min wed betwux me and ðe, and ic ðe þearle gemenigfylde, and þu bist manegra þeoda fæder
 And I will set my covenant betwixt me and thee, and I will exceedingly multiply thee, and thou shalt be the father of many nations
@@ -2301,6 +2366,7 @@ and I will set my covenant with him and his offspring for everlasting duration
 
 And æfter ðære spræce se Ælmihtiga up gewende
 And after this speech the Almighty went up
+0 0 1 1 2 2 3 3 4 4 5 5 6 7 7 6
 
 On þam ylcan dæge wæs Abraham ymbsniden, and eal his hyred, and syððan his sunu Isaac, on ðam eahtoðan dæge his acennednysse
 On the same day Abraham was circumcised, and all his household, and afterwards his son Isaac, on the eighth day from his birth
@@ -2424,6 +2490,7 @@ God will call his servants by other names
 
 Eft se ylca wítega cwæð
 Again, the same prophet said
+0 0 1 1 2 2 3 3 4 4
 
 Þu bist gecíged niwum naman, þone ðe Godes múð genemnode
 Thou shall be called by a new name, which the mouth of God hath named
@@ -2457,6 +2524,7 @@ The stone knife, which circumcised the child, betokened the stone of which the a
 
 Se stán soðlice wæs Crist
 The stone verily was Christ
+0 0 1 1 2 2 3 3 4 4
 
 He cwæð wæs for ðære getacnunge, na for edwiste
 He said was, meaning a type, not in substance
@@ -2548,8 +2616,9 @@ Sunday is the first in creation, in order, and in dignity
 Secgað eac sume gedwæsmenn þæt sum orfcyn sy þe man bletsigan ne sceole, and cweðað þæt hí þurh bletsunge misfarað, and ðurh wyrigunge geðeoð, and brucað þonne Godes gife him on teonan, buton bletsunge, mid deofles awyrigednysse
 Some foolish men also say, that there are some kinds of animals which one should not bless, and say that they decline by blessing, and by cursing thrive, and so enjoy God's grace to their injury, without blessing, with the devil's malediction
 
-Ælc bletsung is of Gode, and wyrigung of deofle}}
+Ælc bletsung is of Gode, and wyrigung of deofle
 Every blessing is of God, and curse of the devil
+0 0 1 1 2 2 3 3 4 4 5 5 6 6 7 7 9 8
 
 God gesceop ealle gesceafta, and deofol nane gesceafta scyppan ne mæg, ac he is yfel tihtend, and leas wyrcend, synna ordfruma, and sawla bepæcend
 God created all creatures, and the devil can create no creatures, for he is an inciter to evil, and worker of falsehood, author of sins, and deceiver of souls
@@ -2577,6 +2646,7 @@ he is in appearance a christian man, and is a miserable heathen
 
 swa swa se ylca apostol be swylcum cwæð
 as the same apostle said of such
+0 0.1 1 2 2 3 3 4 4 7 6 6
 
 Ic wene þæt ic swunce on ydel, ðaða ic eow to Gode gebigde: nu ge cepað dagas and monðas mid ydelum wíglungum
 I believe that I laboured in vain when I inclined you to God, now ye observe days and months with vain auguries
@@ -2607,6 +2677,7 @@ Be to him glory and praise ever to eternity
 
 Amen
 Amen
+0 0
 
 Men ða leofostan, nu for feawum dagum we oferræddon þis godspel ætforan eow, þe belimpð to ðysses dæges ðenunge, for gereccednysse ðære godspellican endebyrdnysse
 Most beloved men, a few days ago we read over this gospel before you, which belongs to the service of this day, for the interpretation of the evangelical narrative
@@ -2616,18 +2687,10 @@ but we did not touch on the exposition further than belonged to the dignity of t
 
 Matheus se Godspellere cwæð
 Matthew the Evangelist said
-
-Cum natus esset Iesus in Bethleem Iudæ, in diebus Herodis regis, ecce Magi ab oriente uenerunt Hierosolimam, dicentes, Ubi est qui natus est Rex Iudeorum
-Cum natus esset Jesus in Bethlehem Judæ, in diebus Herodis regis, ecce Magi ab oriente venerunt Hierosolymam, dicentes, Ubi est qui natus est Rex Judæorum
-
-et reliqua
-et reliqua
+0 0 1 1 2 2 3 3
 
 Þaða se Hælend acenned wæs on þære Iudeiscan Bethleem, on Herodes dagum cyninges, efne ða comon fram east-dæle middangeardes ðry tungel-witegan to ðære byrig Hierusalem, þus befrínende, Hwær is Iudeiscra leoda Cyning, seðe acenned is
 When Jesus was born in Bethlehem of Judæa, in the days of Herod the king, behold there came from the east part of the world three astrologers to the city of Jerusalem, thus inquiring, Where is the King of the Jews, who is born
-
-etc
-etc
 
 Ðes dæg is gehaten Epiphania Domini, þæt is Godes geswutelung-dæg
 This day is called the Epiphany of the Lord, that is the day of God's manifestation
@@ -2643,6 +2706,7 @@ This is my beloved Son who well pleaseth me
 
 gehyrað him
 obey him
+0 0 1 1
 
 Eac on ðisum dæge he awende wæter to æðelum wine, and mid þam geswutelode þæt he is se soða Scyppend, þe ða gesceafta awendan mihte
 On this day also he turned water to noble wine, and thereby manifested that he is the true Creator who could change his creatures
@@ -2700,12 +2764,14 @@ It is manifest that the astrologers knew Christ to be a true man, when they inqu
 
 Hwær is se ðe acenned is
 Where is he who is born
+0 0 1 1 2 2 3 3 4 5 5 4
 
 Hí oncneowon hine soðne Cyning, þaða hí cwædon
 They knew him to be a true king, when they said
 
 Iudea Cyning
 King of Juda
+0 1 2 0
 
 Hí hine wurðodon soðne God, þaða hí cwædon
 They worshipped him as true God, when they said
@@ -2790,6 +2856,7 @@ Holy writ indeed says that God loved Jacob, and hated Esau
 
 na for gewyrde, ac for mislicum geearnungum
 not by destiny, but for various acts
+0 0 1 1 2 2 3 3 4 4 5 5 6 6
 
 Hit gelimpð forwel oft þæt on anre tíde acenð seo cwén and seo wyln, and ðeah geðicð se æðeling be his gebyrdum to healicum cynesetle, and ðære wylne sunu wunað eal his líf on ðeowte
 It happens very often that the queen and the slave bring forth at one time, and yet the prince, through his birth, grows up for the lofty throne, and the son of the slave continues all his life in servitude
@@ -2907,6 +2974,7 @@ They then, with outstretched bodies, worshipped Christ, and opened their coffers
 
 Gold gedafenað cyninge
 Gold befits a king
+0 0 1 1 3 2
 
 stór gebyrað to Godes ðenunge
 frankincense belongs to God's service
@@ -2970,6 +3038,7 @@ By myrrh is typified the mortality of our flesh, concerning which the holy congr
 
 Mine handa drypton myrran
 My hands dropt myrrh
+0 0 1 1 2 2 3 3
 
 Þam acennedan Cyninge we bringað gold, gif we on his gesihðe mid beorhtnysse þæs upplican wisdomes scinende beoð
 To the born King we bring gold, if we are shining in his sight with the brightness of heavenly wisdom
@@ -3021,6 +3090,7 @@ He is to be sought with a true heart, and steadfast mind, who liveth and ruleth 
 
 Amen
 Amen
+0 0
 
 Matheus, se eadiga Godspellere awrát on þissere godspellican rædinge, þæt
 Matthew, the blessed Evangelist, wrote in this evangelical lecture, that
@@ -3036,6 +3106,7 @@ Jesus stretched forth his hand, and touched him, and said, I will
 
 and sy ðu geclænsod
 and be thou cleansed
+0 0 1 1 2 2 3 3
 
 Þa sona wearð his hreofla eal geclænsod, and he wæs gehæled
 Then immediately was his leprosy all cleansed, and he was healed
@@ -3051,6 +3122,7 @@ The doctor Haymo says in exposition of this, that the mountain from which Jesus 
 
 He wæs ungesewenlic and unðrowigendlic on his gecynde
 He was invisible and impassible in his nature
+0 0 1 1 2 2 3 3 4 4 5 5 6 6 7 7
 
 þa wearð he gesewenlic on urum gecynde, and þrowigendlic
 then he became visible in our nature, and passible
@@ -3069,6 +3141,7 @@ Jesus stretched forth his hand, and touched him, and said, I will
 
 and sy ðu geclænsod
 and be thou cleansed
+0 0 1 1 2 2 3 3
 
 Þa sona wearð his hreofla eal geclænsod, and he wæs gehæled
 Then immediately was his leprosy all cleansed, and he was healed
@@ -3093,12 +3166,15 @@ Lord, if thou wilt, thou canst cleanse me
 
 Se Hælend andwyrde
 Jesus answered
+0 0.1 1 2
 
 Ic wylle
 I will
+0 0 1 1
 
 and þu beo geclænsod
 and be thou cleansed
+0 0 1 1 2 2 3 3
 
 Godes hæs soðlice is weorc, swa swa se sealm-wyrhta cwæð
 Verily God's behest is act, as the psalmist said
@@ -3108,6 +3184,7 @@ He said it, and creatures were made
 
 He bebead, and hí wæron gesceapene
 He commanded, and they were created
+0 0 1 1 2 2 3 3 4 4 5 5
 
 On gastlicum andgite getacnode þes hreoflia man eal mancyn, þe wæs atelice hreoflig, mid mislicum leahtrum on þam inran menn
 In a spiritual sense this leper betokened all mankind, which was foully leprous with divers sins in the inward man
@@ -3129,12 +3206,14 @@ and we should steadfastly implore his will to that fulfilment
 
 His hand getacnað his mihte and his flæsclicnysse
 His hand betokens his might and his incarnation
+0 0 1 1 2 2 3 3 4 4 5 5 6 6 7 7
 
 Swa swa Crist mid his handa hrepunge þone hreoflian gehælde, swa eac he alysde us fram ure sawla synnum ðurh anfenge ures flæsces
 As Christ by the touch of his hands healed the leper, so also he redeemed us from the sins of our souls by the assumption of our flesh
 
 swa swa se witega Isaias cwæð
 as the prophet Isaiah said
+0 0.1 1 2 2 3 3 4 4 5
 
 Soðlice he sylf ætbræd ure adlunga, and ure sarnyssa he sylf abær
 Verily he took away our diseases, and our pains he himself bare

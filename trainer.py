@@ -138,4 +138,4 @@ if __name__ == '__main__':
     # train_decision_boost(train, test)
     train_decision_tree_letter(train, test)
     train_decision_boost_letter(train, test)
-    train_svm_letter(train, test)
+    # train_svm_letter(train, test)
