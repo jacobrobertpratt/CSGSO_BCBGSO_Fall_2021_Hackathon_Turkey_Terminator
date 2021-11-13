@@ -25,6 +25,10 @@ def write_phrases(phrases: List[Tuple[str, str]], path: pathlib.Path):
             fp.write((ne + '\n\n').encode('utf8'))
 
 
+def read_indices(path: pathlib.Path) -> List[Tuple[str, List[Tuple[int, int]]]]:
+    pass
+
+
 if __name__ == '__main__':
     phrases = read_phrases('./data/phrases.txt')
     write_phrases(phrases, './data/more_phrases.txt')
