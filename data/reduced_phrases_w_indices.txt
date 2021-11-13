@@ -59,6 +59,7 @@ Here are nine hosts of angels: they have no body, but they are all spirits, very
 
 Ðæt teoðe werod abreað and awende on yfel
 The tenth host rebelled and turned to evil
+0 0 1 1 2 2 3 3 4 4 5 5 6 6 7 7
 
 God hí gesceop ealle góde, and let hí habban agenne cyre, swa hí heora Scyppend lufedon and filigdon, swa hí hine forleton
 God created them all good, and let them have their own discretion, whether they would love and follow their Creator, or would forsake him
@@ -95,6 +96,7 @@ nor can they now perpetrate any sin, but they are ever meditating only how they 
 
 Swa mihton eac þa oðre þe ðær feollon dón, gif hi woldon
 So might also the others who fell have done if they had been willing
+0 0 1 1 2 2 3 3 4 4 5 5.6 6 7 8 8 9 9 10 10 13 11
 
 forþi ðe God hí geworhte to wlitegum engla gecynde, and let hí habban agenne cyre, and hí næfre ne gebigde ne ne nydde mid nanum þingum to þam yfelan ræde
 seeing that God had made them of the beauteous nature of angels, and let them have their own will, and would never have inclined nor forced them in any way to that evil counsel
@@ -104,6 +106,7 @@ for the evil counsel never came from God's conception, but came from the devil's
 
 Nu þencð menig man and smeað hwanon deofol come
 Now many a man will think and inquire, whence the devil came
+0 0 1 2 4 3 8 6 10 7 11 8
 
 þonne wite he þæt God gesceop to mæran engle þone þe nu is deofol: ac God ne gesceop hine na to deofle
 be it, therefore, known to him that God created as a great angel him who is now the devil: but God did not create him as the devil: but when he was wholly fordone and guilty towards God, through his great haughtiness and enmity, then became he changed to the devil, who before was created a great angel
@@ -134,6 +137,7 @@ But how could Adam know what he was, unless he were obedient in some thing to hi
 
 Swylce God ewǽde to him
 as if God had said to him
+2 1 4 2 5 3 6 4
 
 Nast þu na þæt ic eom þin Hlaford and þæt þu eart min þeowa, buton þu do þæt ic þe háte, and forgáng þæt ic þe forbeode
 Thou knowest not that I am thy Lord, and that thou art my servant, unless thou dost that which I command, and forgoest that which I forbid thee
@@ -146,18 +150,23 @@ I say unto thee, forgo thou the fruit of one tree, and with that easy obedience 
 
 Gif ðu þonne ðis lytle bebód tobrecst, þu scealt deaðe sweltan
 But if thou breakest this little commandment, thou shalt perish by death
+1 0 2 1 3 2 4 3 5 4 6 5.6 7 7 8 8 9 10 10 9
 
 And þa wæs Adam swa wís þæt God gelædde to him nytenu, and deorcynn, and fugelcynn, ðaða he hí gesceapene hæfde
 And then was Adam so wise that God led to him the cattle, and brute race, and bird race, when he had created them
+0 0 1 1 2 2 3 3 4 4 5 5 6 6 7 7 8 8 9 9 10 10 12 11 13 12 14 13 16 14 17 15 19 16 20 17 21 18 22 19 23 20
 
 and Adam him eallum naman gesceop
 and Adam made names for them all
+0 0 1 1 2 5 3 4 5 2 6 3
 
 and swa swa hé hí þa genamode swa hí sindon gyt gehatene
 and so as he named them are they yet called
+0 0 1 1 2 2 3 3 4 6 6 7 7 8 8 10 9 11
 
 Þa cwæð God
 Then said God
+0 0 1 1 2 2
 
 Nis na gedafenlic þæt þes man ana beo, and næbbe nænne fultum
 It is not fitting that this man be alone, and have no help
@@ -170,21 +179,25 @@ And God then caused Adam to sleep, and as he slept, he took a rib from his side,
 
 Þa cwæð Adam
 Then said Adam
+0 0 1 1 2 2
 
 Heo is ban of minum banum, and flæsc of minum flæsce
 She is bone of my bone, and flesh of my flesh
 
 beo hire nama Uirago, þæt is fæmne
 be her name Virago, that is female
+0 0 1 1 2 2 3 3 4 4 5 5 6 6
 
 forðan ðe heo is of hire were genumen
 because she is taken from her husband
+0 0.1 1 2 2 3 4 4 5 5
 
 Ða sette Adam eft hire oðerne naman, Aeua, þæt is lif
 Then Adam afterwards bestowed on her another name, Eva, that is life
 
 forðan ðe heo is ealra lybbendra modor
 because she is the mother of all living
+0 0.1 1 2 2 3 4 6 6 4 7 5
 
 Ealle gesceafta, heofonas and englas, sunnan and monan, steorran and eorðan, ealle nytenu and fugelas, sǽ and ealle fixas, and ealle gesceafta God gesceop and geworhte on six dagum
 All creatures, heavens and angels, sun and moon, stars and earth, all beasts and birds, the sea and all fishes, and all creatures, God created and wrought in six days
@@ -197,21 +210,27 @@ And he beheld then all his works that he had wrought, and they were all exceedin
 
 Ealle ðing he geworhte buton ælcum antimbre
 All things he wrought without any matter
+0 0 1 1 2 2 3 3 4 4 5 5 6 6
 
 He cwæð
 He said
+0 0 1 1
 
 Geweorðe leoht
 Let there be light
+2 0 3 1
 
 and ðærrihte wæs leoht geworden
 and instantly there was light
+0 0 1 1 2 3 3 2 4 4
 
 He cwæð eft
 He said again
+0 0 1 1 2 2
 
 Geweorðe heofen
 Let there be heaven
+2 0 3 1
 
 and þærrihte wæs heofen geworht, swa swa he mid his wisdome and mid his willan hit gedihte
 and instantly heaven was made, as he with his wisdom and his will had appointed it
@@ -233,9 +252,11 @@ When he had made the man Adam, he did not say
 
 Geweorðe man geworht
 Let man be made
+0 0 1 1 3 2
 
 ac he cwæð
 but he said
+0 0 1 1 2 2
 
 Uton gewyrcan mannan to ure anlicnysse
 Let us make man in our likeness
@@ -251,6 +272,7 @@ because they will all come to naught, and man is in one part eternal, that is in
 
 heo ne geendað næfre
 that will never end
+0 0 2 3 3 2
 
 Se lichama is deadlic þurh Adames gylt, ac ðeah-hwæðere God arærð eft ðone lichaman to ecum ðingum on domes dæg
 The body is mortal through Adam's sin, but, nevertheless, God will raise again the body to eternity on doomsday
