@@ -61,6 +61,8 @@ class Phrase:
                         vi += 1
                 except UnicodeDecodeError:
                     b.append('?')
+            else:
+                vi += 1
         return ''.join(b)
 
     @staticmethod
