@@ -1,7 +1,7 @@
 from translator import generate_phrase_objects, Phrase
 from typing import List, Tuple
 from tqdm import tqdm
-from sklearn import tree, neighbors
+from sklearn import tree, neighbors, ensemble
 from sklearn.model_selection import train_test_split
 import numpy as np
 import os
@@ -22,9 +22,33 @@ def train_knn(train: Tuple[List[List[float]], List[List[float]]], test: Tuple[Li
     knn = neighbors.KNeighborsRegressor(k, n_jobs=os.cpu_count())
     print('Fitting Model...')
     model = knn.fit(trainx, trainy)
-    print('Training Accuracy: {}%'.format(model.score(trainx, trainy)))
+    print('Training Accuracy: {}%'.format(model.score(trainx, trainy) * 2))
     testx, testy = test
-    print('Inference Accuracy: {}%'.format(model.score(testx, testy)))
+    print('Inference Accuracy: {}%'.format(model.score(testx, testy) * 2))
+
+
+def train_decision_tree(train: Tuple[List[List[float]], List[List[float]]],
+                        test: Tuple[List[List[float]], List[List[float]]]):
+    trainx, trainy = train
+    print('Decision Tree model:')
+    model = tree.DecisionTreeRegressor()
+    print('Fitting Model...')
+    model = model.fit(trainx, trainy)
+    print('Training Accuracy: {}%'.format(model.score(trainx, trainy) * 2))
+    testx, testy = test
+    print('Inference Accuracy: {}%'.format(model.score(testx, testy) * 2))
+
+
+def train_decision_boost(train: Tuple[List[List[float]], List[List[float]]],
+                         test: Tuple[List[List[float]], List[List[float]]]):
+    trainx, trainy = train
+    print('AdaBoost Decision Tree model:')
+    model = ensemble.AdaBoostRegressor(tree.DecisionTreeRegressor())
+    print('Fitting Model...')
+    model = model.fit(trainx, trainy)
+    print('Training Accuracy: {}%'.format(model.score(trainx, trainy) * 2))
+    testx, testy = test
+    print('Inference Accuracy: {}%'.format(model.score(testx, testy) * 2))
 
 
 if __name__ == '__main__':
@@ -38,3 +62,5 @@ if __name__ == '__main__':
     train = (trainx, trainy)
     test = (testx, testy)
     train_knn(train, test)
+    train_decision_tree(train, test)
+    train_decision_boost(train, test)
