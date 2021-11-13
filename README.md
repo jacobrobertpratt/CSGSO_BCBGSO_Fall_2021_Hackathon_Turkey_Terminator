@@ -19,4 +19,50 @@ cognate sentence, thus, we manually indexed them linking the words from each sen
 This was in the [reduced_phrases_w_indices.txt](./data/reduced_phrases_w_indices.txt) file.
 
 ## Model Selection
+### Letter Classifiers
+In addition to using normal regression techniques, I also created a model that assigned a base estimator to each of 120 letters.
+Each classifier is responsible for one letter of the output word, this allowed me to use the BoostingClassifier from`sklearn` since it required that the
+labels be a 1D array instead of the 2D array that I had.
+
+### Results
 Several models were tested, overall, we saw good accuracy with kNN and the basic Decision Tree regressors.
+All in all with 1011 data entries, and a Train/Test split of 80/20% I was able to achieve
+
+| Model  | Training Accuracy | Testing Accuracy |
+| ------------- | ------------- | ------ |
+| kNN (k=5)  | 93.52%  | 89.47% |
+| Decision Tree  | 100%  | 85.08% |
+| Letter Decision Tree | 100% | 22.66% |
+| Letter AdaBoosted Decision Tree | 100% | 22.17% |
+
+Overall, the Decision Tree was used as a compromise between execution time and accuracy.
+
+## Conclusion
+I set out at the beginning of this hackathon to create a translator from modern english to old english.
+And I believe that I succeeded. But don't take my word for it, see for yourself.
+
+## Installation
+### Prerequisits
+You'll need a python environment with the following packages
+- scikit-learn
+- tensorflow-hub
+- pyqt5
+- tqdm
+
+```shell
+pip install scikit-learn tensorflow-hub pyqt5 tqdm
+```
+
+I had some issues getting tensorflow-hub to work, if you have the same issue, try this
+
+```shell
+pip install --upgrade tensorflow-estimator==2.3.0
+```
+
+## Execution
+To run the gui translator, you simply need to run `python main.py` from the terminal.
+The gui is simple, there's an input text box, and an output box, the translate button will be disabled unless there's text in the modern english text box.
+Once you click translate the bar on the bottom will indicate the translation progress, **Note** it can take quite some time
+to do the word embeddings for the sentences, during which it may look like the window is unresponsive, please be patient.
+
+Enjoy!
