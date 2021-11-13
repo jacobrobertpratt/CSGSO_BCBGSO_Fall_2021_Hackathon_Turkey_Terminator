@@ -1,15 +1,18 @@
 An angin is ealra þinga, þæt is God Ælmihtig
 There is one origin of all things, that is God Almighty
-1 2
+1 2 2 0 3 1 6 4 7 5 8 6 9 7 10 8
 
 He is ordfruma and ende: he is ordfruma, forði þe he wæs æfre
 He is beginning and end: he is beginning, because he was ever
+0 0 1 1 2 2 3 3 4 4 5 5 6 6 7 7 8 8.9 9 10 10 11 11 12
 
 he is ende butan ælcere geendunge, forðan þe he bið æfre ungeendod
 he is end without any ending, because he is ever unended
+0 0 1 1 2 2 3 3 4 4 5 5 6 6.7 7 8 8 9 9 10 10 11
 
 He is ealra cyninga Cyning, and ealra hlaforda Hlaford
 He is King of all kings, and Lord of all lords
+0 0 1 1 2 3 5 4 4 2 6 5 7 7 9 6 10 8
 
 He hylt mid his mihte heofonas and eorðan, and ealle gesceafta butan geswince, and he besceawað þa niwelnyssa þe under þyssere eorðan sind
 He holdeth with his might heavens, and earth, and all creatures, without toil, and he beholdeth the depths which are under this earth
