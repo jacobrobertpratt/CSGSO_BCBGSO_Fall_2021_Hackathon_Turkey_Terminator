@@ -17,3 +17,6 @@ along side the word that we had in question.
 Though we had sentences that were directly translated, it wasn't clear as to which words correlated to which words in the 
 cognate sentence, thus, we manually indexed them linking the words from each sentence to the corresponding word in the translation.
 This was in the [reduced_phrases_w_indices.txt](./data/reduced_phrases_w_indices.txt) file.
+
+## Model Selection
+Several models were tested, overall, we saw good accuracy with kNN and the basic Decision Tree regressors.

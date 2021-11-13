@@ -109,9 +109,13 @@ def read_indices(path: pathlib.Path, embeddings: Dict[str, List[float]]) -> List
     with open(path, 'rb') as fp:
         data = fp.read()
         lines = data.decode('utf8').split('\n')
-        for i in tqdm(range(0, len(lines) - 3, 4), desc="Reading word indices"):
+        i = 0
+        while i < len(lines) - 3:
             oe_sentence = lines[i].strip()
             ne_sentence = lines[i + 1].strip()
+            if len(lines[i + 2]) < 3:
+                i += 3
+                continue
             edge_parts = lines[i + 2].split()
             edges = {}
             for e in range(0, len(edge_parts) - 1, 2):
@@ -120,6 +124,7 @@ def read_indices(path: pathlib.Path, embeddings: Dict[str, List[float]]) -> List
                 trgt = list(map(int, trgt.split('.'))) if '.' in trgt else [int(trgt)]
                 edges[src] = trgt
             result.append(Phrase(ne_sentence, edges, embeddings[ne_sentence], oe_sentence))
+            i += 4
     return result
 
 

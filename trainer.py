@@ -123,7 +123,7 @@ def train_decision_boost_letter(train: Tuple[List[List[float]], List[List[float]
 
 
 if __name__ == '__main__':
-    phrases = generate_phrase_objects('./data/embedded_phrases.csv', './data/test_reduced_phrases_w_indices.txt')
+    phrases = generate_phrase_objects('./data/embedded_phrases.csv', './data/reduced_phrases_w_indices.txt')
     dataset = generate_dataset(phrases)
     print('Generated a dataset with {} entries'.format(len(dataset)))
     X = [d[0] for d in dataset]

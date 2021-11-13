@@ -16,30 +16,43 @@ He is King of all kings, and Lord of all lords
 
 He hylt mid his mihte heofonas and eorðan, and ealle gesceafta butan geswince, and he besceawað þa niwelnyssa þe under þyssere eorðan sind
 He holdeth with his might heavens, and earth, and all creatures, without toil, and he beholdeth the depths which are under this earth
+0 0 1 1 2 2 3 3 4 4 5 5 6 6 7 7 8 8 9 9 10 10 11 11 12 12 13 13 14 14 15 15 16 16 19 18 20 19 21 20 22 21
 
 He awecð ealle duna mid anre handa, and ne mæg nan þing his willan wiðstandan
 He weigheth all hills with one hand, and no thing may withstand his will
+0 0 2 2 3 3 4 4 5 5 6 6 1 1 7 7 8 8 9 11 10 9 11 14 12 12 13 13
 
-Ne mæg nan gesceaft fulfremedlice smeagan ne understandan ymbe god: Maran cyððe habbað englas to Gode þonne men, and þeah-hweðere hí ne magon fulfremedlice understandan ymbe God
-No creature may perfectly search out nor understand concerning God: greater affinity have angels to God than men, and yet they may not perfectly understand concerning God
+Ne mæg nan gesceaft fulfremedlice smeagan ne understandan ymbe god
+No creature may perfectly search out nor understand concerning God
+0 0 1 3 7 7 8 8 3 4 4 5 6 6
+
+Maran cyððe habbað englas to Gode þonne men, and þeah-hweðere hí ne magon fulfremedlice understandan ymbe God
+greater affinity have angels to God than men, and yet they may not perfectly understand concerning God
+2 2 3 3 4 4 5 5 6 6 7 7 8 8 12 11 13 13 14 14 15 15 16 16
 
 Hé gesceop gesceafta þaða he wolde
 He created those creatures that he would
+0 0 1 1 3 2 4 3 5 4 6 5
 
 þurh his wisdom he geworhte ealle þing, and þurh his willan hé hí ealle geliffæste
 through his wisdom he wrought all things, and through his will he endued them all with life
+0 0 1 1 2 2 3 3 4 4 5 5 6 6 7 7 8 8 9 9 10 10 11 11 13 12 14 13
 
 Ðeos þrynnys is án God, þæt is se Fæder and his wisdom of him sylfum æfre acenned
 This Trinity is one God, that is, the Father, and his Wisdom, of himself ever produced
+0 0 1 1 2 2 3 3 4 4 5 5 6 6 7 7 8 8 9 9 10 10 11 11 12 12 13 13.14 14 15 15 16
 
 and heora begra willa, þæt is se Halga Gast: he nis na acenned, ac he gæð of þam Fæder and of þam Suna gelice
 and the Will of them both, that is, the Holy Ghost: he is not born, but he goeth alike from the Father and from the Son
+0 0 2 3 6 4 7 5 8 6 9 7 10 8 11 9 12 10 13 11 14 12 15 13 16 14 17 15 19 16 20 17 21 18 22 19 23 20 24 21 25 22 18 23
 
 Ðas þry hadas sindon án Ælmihtig God, se geworhte heofenas, and eorðan, and ealle gesceafta
 These three persons are one Almighty God, who wrought the heavens, and the earth, and all creatures
+0 0 1 1 2 2 3 3 4 4 5 5 6 6 8 7 9 6 10 9 11 10 13 11 14 12 15 13 16 14
 
 He gesceop tyn engla werod, þæt sind englas and heah-englas, throni, dominationes, principatus, potestates, uirtutes, cherubim, seraphim
 He created ten hosts of angels, that is angels and archangels, throni, dominationes, principatus, potestates, virtutes, cherubim, seraphim
+0 0 1 1 2 2 3 4 5 3 6 5 7 6 8 7 9 8 10 9 11 10 12 11 13 12 14 13 15 14 16 15 17 16
 
 Her sindon nigon engla werod: hí nabbað nænne lichaman, ac hí sindon ealle gastas swiðe strange and mihtige and wlitige, on micelre fægernysse gesceapene, to lofe and to wurðmynte heora Scyppende
 Here are nine hosts of angels: they have no body, but they are all spirits, very strong, and mighty, and beautiful, formed with great fairness, to the praise and glory of their Creator
