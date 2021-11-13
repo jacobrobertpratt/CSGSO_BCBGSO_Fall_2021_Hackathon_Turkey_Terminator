@@ -10,8 +10,8 @@ def read_phrases(path: pathlib.Path) -> List[Tuple[str, str]]:
         data = fp.read()
         lines = data.decode('utf8').split('\n')
         for i in tqdm(range(0, len(lines) - 2, 3)):
-            oe_sentences = re.split(r'[.";]', lines[i])
-            ne_sentences = re.split(r'[.";]', lines[i + 1])
+            oe_sentences = re.split(r'[.";?!]', lines[i])
+            ne_sentences = re.split(r'[.";?!]', lines[i + 1])
             for oe, ne in zip(oe_sentences, ne_sentences):
                 if len(oe) > 2 and len(ne) > 2:
                     result.append((oe.strip().strip(',:'), ne.strip().strip(',:')))
