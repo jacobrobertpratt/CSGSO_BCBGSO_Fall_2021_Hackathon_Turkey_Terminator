@@ -30,10 +30,10 @@ All in all with 1011 data entries, and a Train/Test split of 80/20% I was able t
 
 | Model  | Training Accuracy | Testing Accuracy |
 | ------------- | ------------- | ------ |
-| kNN (k=5)  | 93.52%  | 89.47% |
-| Decision Tree  | 100%  | 85.08% |
-| Letter Decision Tree | 100% | 22.66% |
-| Letter AdaBoosted Decision Tree | 100% | 22.17% |
+| kNN (k=5) Regressor  | 93.52%  | 89.47% |
+| Decision Tree Regressor | 100%  | 85.08% |
+| Letter Decision Tree Classifier | 100% | 22.66% |
+| Letter AdaBoosted Decision Tree Classifier | 100% | 22.17% |
 
 Overall, the Decision Tree was used as a compromise between execution time and accuracy.
 
