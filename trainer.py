@@ -23,9 +23,9 @@ def train_knn(train: Tuple[List[List[float]], List[List[float]]], test: Tuple[Li
     knn = neighbors.KNeighborsRegressor(k, n_jobs=os.cpu_count())
     print('Fitting Model...')
     model = knn.fit(trainx, trainy)
-    print('Training Accuracy: {}%'.format(model.score(trainx, trainy) * 2))
+    print('Training Accuracy: {}%'.format(model.score(trainx, trainy) * 100))
     testx, testy = test
-    print('Inference Accuracy: {}%'.format(model.score(testx, testy) * 2))
+    print('Inference Accuracy: {}%'.format(model.score(testx, testy) * 100))
 
 
 def train_decision_tree(train: Tuple[List[List[float]], List[List[float]]],
@@ -35,9 +35,9 @@ def train_decision_tree(train: Tuple[List[List[float]], List[List[float]]],
     model = LetterClassifier(tree.DecisionTreeClassifier())
     print('Fitting Model...')
     model = model.fit(trainx, trainy)
-    print('Training Accuracy: {}%'.format(model.score(trainx, trainy) * 2))
+    print('Training Accuracy: {}%'.format(model.score(trainx, trainy) * 100))
     testx, testy = test
-    print('Inference Accuracy: {}%'.format(model.score(testx, testy) * 2))
+    print('Inference Accuracy: {}%'.format(model.score(testx, testy) * 100))
 
 
 def train_decision_boost(train: Tuple[List[List[float]], List[List[float]]],
@@ -47,9 +47,9 @@ def train_decision_boost(train: Tuple[List[List[float]], List[List[float]]],
     model = LetterClassifier(ensemble.AdaBoostClassifier(tree.DecisionTreeClassifier()))
     print('Fitting Model...')
     model = model.fit(trainx, trainy)
-    print('Training Accuracy: {}%'.format(model.score(trainx, trainy) * 2))
+    print('Training Accuracy: {}%'.format(model.score(trainx, trainy) * 100))
     testx, testy = test
-    print('Inference Accuracy: {}%'.format(model.score(testx, testy) * 2))
+    print('Inference Accuracy: {}%'.format(model.score(testx, testy) * 100))
 
 
 if __name__ == '__main__':
