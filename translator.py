@@ -1,7 +1,40 @@
 import pathlib
-from typing import List, Tuple
+from typing import List, Tuple, Dict
 from tqdm import tqdm
 import re
+import tensorflow_hub as hub
+
+
+embed = hub.load("https://tfhub.dev/google/universal-sentence-encoder-large/5")
+
+
+class Phrase:
+    max_word_length = 120
+
+    def __init__(self, ne: str, oe: str, edges: Dict[int, List[int]], embedding: List[float]):
+        self.ne = ne
+        self.oe = oe
+        self.edges = edges
+        self.embedding = embedding
+
+    def __repr__(self):
+        return '{} <- {}'.format(self.ne, self.oe)
+
+    def get_words(self) -> List[Tuple[int, str]]:
+        result = []
+        words = self.ne.split()
+        for s in self.edges:
+            result.append((s, words[s]))
+        return result
+
+    def translate(self, edge: int) -> str:
+        if edge in self.edges:
+            words = self.oe.split()
+            return ' '.join([words[e] for e in self.edges[edge]])
+        return ''
+
+    def to_array(self, word: int) -> List[float]:
+        
 
 
 def read_phrases(path: pathlib.Path) -> List[Tuple[str, str]]:
@@ -25,8 +58,47 @@ def write_phrases(phrases: List[Tuple[str, str]], path: pathlib.Path):
             fp.write((ne + '\n\n').encode('utf8'))
 
 
-def read_indices(path: pathlib.Path) -> List[Tuple[str, List[Tuple[int, int]]]]:
-    pass
+def read_indices(path: pathlib.Path, embeddings: Dict[str, List[float]]) -> List[Phrase]:
+    result = []
+    with open(path, 'rb') as fp:
+        data = fp.read()
+        lines = data.decode('utf8').split('\n')
+        for i in tqdm(range(0, len(lines) - 3, 4)):
+            oe_sentence = lines[i]
+            ne_sentence = lines[i + 1]
+            edge_parts = lines[i + 2].split()
+            edges = {}
+            for e in range(0, len(edge_parts) - 1, 2):
+                src = int(edge_parts[e])
+                trgt = edge_parts[e + 1]
+                trgt = list(map(int, trgt.split('.'))) if '.' in trgt else [int(trgt)]
+                edges[src] = trgt
+            result.append(Phrase(ne_sentence, oe_sentence, edges, embeddings[ne_sentence]))
+    return result
+
+
+def create_word_embeddings(path: pathlib.Path, outpath: pathlib.Path):
+    phrases = read_phrases(path)
+    ne = [p[1] for p in phrases]
+    embeddings = embed(ne)
+    lines = []
+    for sentence, embedding in tqdm(zip(ne, embeddings)):
+        line = (sentence + ',' + ','.join(map(str, embedding)) + '\n').replace('tf.Tensor(', '').replace(', shape=(), dtype=float32)', '')
+        lines.append(line.encode('utf8'))
+    with open(outpath, 'wb+') as fp:
+        fp.writelines(lines)
+
+
+def read_word_embeddings(path: pathlib.Path) -> Dict[str, List[float]]:
+    result = {}
+    with open(path, 'rb') as fp:
+        lines = (fp.read()).decode('utf8').split('\n')
+        for line in lines:
+            segs = line.split(',')
+            embedding = list(map(float, segs[-512:]))
+            sentence = ','.join(segs[:-512])
+            result[sentence] = embedding
+    return result
 
 
 if __name__ == '__main__':
