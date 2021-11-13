@@ -68,7 +68,14 @@ def main_window(m):
         status_ribbon.repaint()
 
         sentences = re.split(r'[.;"]', ne_entry.document().toPlainText())
+
+        status_ribbon.setText('Embedding Text')
+        status_ribbon.repaint()
+
         embeddings = embed(sentences).numpy()
+
+        status_ribbon.setText('Creating Features')
+        status_ribbon.repaint()
 
         phrases = []
         for sentence, emb in zip(sentences, embeddings):
@@ -77,6 +84,9 @@ def main_window(m):
             for wi, word in enumerate(words):
                 sentence_phrases.append(Phrase.get_feature_vector(word, emb.tolist(), wi))
             phrases.append(sentence_phrases)
+
+        status_ribbon.setText('Predicting words')
+        status_ribbon.repaint()
 
         oe_text = ''
         for sentence in phrases:
