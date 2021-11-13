@@ -42,6 +42,20 @@ def train_decision_tree(train: Tuple[List[List[float]], List[List[float]]],
                         test: Tuple[List[List[float]], List[List[float]]]):
     trainx, trainy = train
     print('Decision Tree model:')
+    model = tree.DecisionTreeRegressor()
+    print('Fitting Model...')
+    model = model.fit(trainx, trainy)
+    print('Training Accuracy: {}%'.format(model.score(trainx, trainy) * 100))
+    testx, testy = test
+    print('Inference Accuracy: {}%'.format(model.score(testx, testy) * 100))
+    model_filename = 'decision_tree.sav'
+    save_model(pathlib.Path('./models', model_filename), model)
+
+
+def train_decision_tree_letter(train: Tuple[List[List[float]], List[List[float]]],
+                        test: Tuple[List[List[float]], List[List[float]]]):
+    trainx, trainy = train
+    print('Decision Tree Letter model:')
     model = LetterClassifier(tree.DecisionTreeClassifier())
     print('Fitting Model...')
     model = model.fit(trainx, trainy)
@@ -53,6 +67,20 @@ def train_decision_tree(train: Tuple[List[List[float]], List[List[float]]],
 
 
 def train_decision_boost(train: Tuple[List[List[float]], List[List[float]]],
+                         test: Tuple[List[List[float]], List[List[float]]]):
+    trainx, trainy = train
+    print('AdaBoost Decision Tree model:')
+    model = ensemble.AdaBoostClassifier(tree.DecisionTreeClassifier())
+    print('Fitting Model...')
+    model = model.fit(trainx, trainy)
+    print('Training Accuracy: {}%'.format(model.score(trainx, trainy) * 100))
+    testx, testy = test
+    print('Inference Accuracy: {}%'.format(model.score(testx, testy) * 100))
+    model_filename = 'ada_boost.sav'
+    save_model(pathlib.Path('./models', model_filename), model)
+
+
+def train_decision_boost_letter(train: Tuple[List[List[float]], List[List[float]]],
                          test: Tuple[List[List[float]], List[List[float]]]):
     trainx, trainy = train
     print('AdaBoost Decision Tree model:')
@@ -79,3 +107,5 @@ if __name__ == '__main__':
     train_knn(train, test)
     train_decision_tree(train, test)
     train_decision_boost(train, test)
+    train_decision_tree_letter(train, test)
+    train_decision_boost_letter(train, test)

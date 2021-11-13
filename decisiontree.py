@@ -23,5 +23,7 @@ class LetterClassifier:
         predictions = self.predict(x)
         correct = 0
         for pred, yt in zip(predictions, y):
-            correct += sum([int(p) == int(ytt) for p, ytt in zip(pred, yt)]) / self.num_classifiers
+            # correct += sum([int(p) == int(ytt) for p, ytt in zip(pred, yt)]) / self.num_classifiers
+            if all([int(p) == int(ytt) for p, ytt in zip(pred, yt)]):
+                correct += 1
         return correct / len(predictions)
