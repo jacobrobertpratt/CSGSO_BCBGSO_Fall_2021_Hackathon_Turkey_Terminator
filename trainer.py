@@ -2,7 +2,7 @@ from translator import generate_phrase_objects, Phrase
 from decisiontree import LetterClassifier
 from typing import List, Tuple
 from tqdm import tqdm
-from sklearn import tree, neighbors, ensemble
+from sklearn import tree, neighbors, ensemble, svm
 from sklearn.model_selection import train_test_split
 import numpy as np
 import os
@@ -38,6 +38,34 @@ def train_knn(train: Tuple[List[List[float]], List[List[float]]], test: Tuple[Li
     save_model(pathlib.Path('./models', model_filename), model)
 
 
+# def train_svm(train: Tuple[List[List[float]], List[List[float]]],
+#               test: Tuple[List[List[float]], List[List[float]]]):
+#     trainx, trainy = train
+#     print('Decision Support Vector Machine model:')
+#     model = svm.SVR()
+#     print('Fitting Model...')
+#     model = model.fit(trainx, trainy)
+#     print('Training Accuracy: {}%'.format(model.score(trainx, trainy) * 100))
+#     testx, testy = test
+#     print('Inference Accuracy: {}%'.format(model.score(testx, testy) * 100))
+#     model_filename = 'decision_tree.sav'
+#     save_model(pathlib.Path('./models', model_filename), model)
+
+
+def train_svm_letter(train: Tuple[List[List[float]], List[List[float]]],
+                     test: Tuple[List[List[float]], List[List[float]]]):
+    trainx, trainy = train
+    print('Decision Support Vector Machine model:')
+    model = LetterClassifier(svm.SVR())
+    print('Fitting Model...')
+    model = model.fit(trainx, trainy)
+    print('Training Accuracy: {}%'.format(model.score(trainx, trainy) * 100))
+    testx, testy = test
+    print('Inference Accuracy: {}%'.format(model.score(testx, testy) * 100))
+    model_filename = 'svm_letter.sav'
+    save_model(pathlib.Path('./models', model_filename), model)
+
+
 def train_decision_tree(train: Tuple[List[List[float]], List[List[float]]],
                         test: Tuple[List[List[float]], List[List[float]]]):
     trainx, trainy = train
@@ -62,22 +90,22 @@ def train_decision_tree_letter(train: Tuple[List[List[float]], List[List[float]]
     print('Training Accuracy: {}%'.format(model.score(trainx, trainy) * 100))
     testx, testy = test
     print('Inference Accuracy: {}%'.format(model.score(testx, testy) * 100))
-    model_filename = 'decision_tree.sav'
+    model_filename = 'decision_tree_letter.sav'
     save_model(pathlib.Path('./models', model_filename), model)
 
 
-def train_decision_boost(train: Tuple[List[List[float]], List[List[float]]],
-                         test: Tuple[List[List[float]], List[List[float]]]):
-    trainx, trainy = train
-    print('AdaBoost Decision Tree model:')
-    model = ensemble.AdaBoostClassifier(tree.DecisionTreeClassifier())
-    print('Fitting Model...')
-    model = model.fit(trainx, trainy)
-    print('Training Accuracy: {}%'.format(model.score(trainx, trainy) * 100))
-    testx, testy = test
-    print('Inference Accuracy: {}%'.format(model.score(testx, testy) * 100))
-    model_filename = 'ada_boost.sav'
-    save_model(pathlib.Path('./models', model_filename), model)
+# def train_decision_boost(train: Tuple[List[List[float]], List[List[float]]],
+#                          test: Tuple[List[List[float]], List[List[float]]]):
+#     trainx, trainy = train
+#     print('AdaBoost Decision Tree model:')
+#     model = ensemble.AdaBoostClassifier(tree.DecisionTreeClassifier())
+#     print('Fitting Model...')
+#     model = model.fit(trainx, trainy)
+#     print('Training Accuracy: {}%'.format(model.score(trainx, trainy) * 100))
+#     testx, testy = test
+#     print('Inference Accuracy: {}%'.format(model.score(testx, testy) * 100))
+#     model_filename = 'ada_boost.sav'
+#     save_model(pathlib.Path('./models', model_filename), model)
 
 
 def train_decision_boost_letter(train: Tuple[List[List[float]], List[List[float]]],
@@ -90,7 +118,7 @@ def train_decision_boost_letter(train: Tuple[List[List[float]], List[List[float]
     print('Training Accuracy: {}%'.format(model.score(trainx, trainy) * 100))
     testx, testy = test
     print('Inference Accuracy: {}%'.format(model.score(testx, testy) * 100))
-    model_filename = 'ada_boost.sav'
+    model_filename = 'ada_boost_letter.sav'
     save_model(pathlib.Path('./models', model_filename), model)
 
 
@@ -105,7 +133,9 @@ if __name__ == '__main__':
     train = (trainx, trainy)
     test = (testx, testy)
     train_knn(train, test)
+    # train_svm(train, test)
     train_decision_tree(train, test)
-    train_decision_boost(train, test)
+    # train_decision_boost(train, test)
     train_decision_tree_letter(train, test)
     train_decision_boost_letter(train, test)
+    train_svm_letter(train, test)

@@ -1,4 +1,5 @@
 from typing import List
+from copy import deepcopy
 
 
 class LetterClassifier:
@@ -11,7 +12,7 @@ class LetterClassifier:
         self.classifiers.clear()
         for letter in range(self.num_classifiers):
             new_y = [yt[letter] for yt in y]
-            self.classifiers.append(self.base_classifier.fit(x, new_y))
+            self.classifiers.append(deepcopy(self.base_classifier).fit(x, new_y))
         return self
 
     def predict(self, x) -> List[List[float]]:

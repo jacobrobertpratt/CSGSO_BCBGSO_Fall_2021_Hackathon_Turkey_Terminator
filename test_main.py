@@ -6,7 +6,7 @@ import numpy as np
 
 
 if __name__ == '__main__':
-    model_name = './models/knn.sav'
+    model_name = './models/decision_tree.sav'
     with open(model_name, 'rb') as fp:
         model = pickle.load(fp)
     sentences = re.split(r'[.;"]', input('What to translate? '))
