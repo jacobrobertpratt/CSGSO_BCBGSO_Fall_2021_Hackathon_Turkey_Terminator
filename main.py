@@ -53,14 +53,20 @@ def main_window(m):
 
     def translate_clicked():
         sentences = re.split(r'[.;"]', ne_entry.document().toPlainText())
-        embeddings = embed(sentences)
+        embeddings = embed(sentences).numpy()
+
         phrases = []
         for sentence, emb in zip(sentences, embeddings):
+            sentence_phrases = []
             words = sentence.split()
             for wi, word in enumerate(words):
-                phrases.append(Phrase.get_feature_vector(word, emb, wi))
-        predictions = m.predict(np.array(phrases, dtype='float'))
-        oe_text = '.'.join([Phrase.vec2word(pred) for pred in predictions])
+                sentence_phrases.append(Phrase.get_feature_vector(word, emb.tolist(), wi))
+            phrases.append(sentence_phrases)
+
+        oe_text = ''
+        for sentence in phrases:
+            predictions = m.predict(np.array(sentence, dtype='float'))
+            oe_text += ' '.join([Phrase.vec2word(pred) for pred in predictions]) + '.'
         oe_entry.setText(oe_text)
 
     translate_button.clicked.connect(translate_clicked)
@@ -69,7 +75,7 @@ def main_window(m):
 
 
 if __name__ == '__main__':
-    model_name = './models/ada_boost.sav'
+    model_name = './models/decision_tree.sav'
     with open(model_name, 'rb') as fp:
         model = pickle.load(fp)
     main_window(model)
