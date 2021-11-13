@@ -28,6 +28,12 @@ class Phrase:
         b = w.encode('utf8')
         if len(b) > Phrase.max_word_length:
             b = b[:Phrase.max_word_length]
+            return list(map(float, b))
+        if len(b) < Phrase.max_word_length:
+            b = list(map(float, b))
+            diff = Phrase.max_word_length - len(b)
+            b += [0.0]*diff
+            return b
         return list(map(float, b))
 
     def get_words(self) -> List[Tuple[int, str]]:
