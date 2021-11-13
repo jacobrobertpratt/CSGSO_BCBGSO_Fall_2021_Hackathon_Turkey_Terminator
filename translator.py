@@ -11,7 +11,7 @@ embed = hub.load("https://tfhub.dev/google/universal-sentence-encoder-large/5")
 class Phrase:
     max_word_length = 120
 
-    def __init__(self, ne: str, oe: str, edges: Dict[int, List[int]], embedding: List[float]):
+    def __init__(self, ne: str, edges: Dict[int, List[int]], embedding: List[float], oe: str = ''):
         self.ne = ne
         self.oe = oe
         self.edges = edges
@@ -36,6 +36,15 @@ class Phrase:
             return b
         return list(map(float, b))
 
+    @staticmethod
+    def vec2word(v: List[float]) -> str:
+        b = bytes(map(int, [vt for vt in v if vt > 0])).decode('utf8')
+        return b
+
+    @staticmethod
+    def get_feature_vector(w: str, embed: List[float], index: int) -> List[float]:
+        return Phrase.word2vec(w) + embed + [float(index)]
+
     def get_words(self) -> List[Tuple[int, str]]:
         result = []
         words = self.ne.split()
@@ -50,7 +59,7 @@ class Phrase:
         return ''
 
     def to_array(self, word: int) -> Tuple[List[float], List[float]]:
-        return self.word2vec(self[word]) + self.embedding + [float(word)], self.word2vec(self.translate(word))
+        return self.get_feature_vector(self[word], self.embedding, word), self.word2vec(self.translate(word))
 
 
 def read_phrases(path: pathlib.Path) -> List[Tuple[str, str]]:
@@ -89,7 +98,7 @@ def read_indices(path: pathlib.Path, embeddings: Dict[str, List[float]]) -> List
                 trgt = edge_parts[e + 1]
                 trgt = list(map(int, trgt.split('.'))) if '.' in trgt else [int(trgt)]
                 edges[src] = trgt
-            result.append(Phrase(ne_sentence, oe_sentence, edges, embeddings[ne_sentence]))
+            result.append(Phrase(ne_sentence, edges, embeddings[ne_sentence], oe_sentence))
     return result
 
 
