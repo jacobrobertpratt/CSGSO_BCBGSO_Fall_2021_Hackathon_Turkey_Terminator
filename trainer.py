@@ -6,6 +6,14 @@ from sklearn import tree, neighbors, ensemble
 from sklearn.model_selection import train_test_split
 import numpy as np
 import os
+import pathlib
+import pickle
+
+
+def save_model(path: pathlib.Path, model):
+    print('Saving model {}'.format(path))
+    with open(path, 'wb+') as fp:
+        pickle.dump(model, fp)
 
 
 def generate_dataset(phr: List[Phrase]) -> List[Tuple[List[float], List[float]]]:
@@ -26,6 +34,8 @@ def train_knn(train: Tuple[List[List[float]], List[List[float]]], test: Tuple[Li
     print('Training Accuracy: {}%'.format(model.score(trainx, trainy) * 100))
     testx, testy = test
     print('Inference Accuracy: {}%'.format(model.score(testx, testy) * 100))
+    model_filename = 'knn.sav'
+    save_model(pathlib.Path('./models', model_filename), model)
 
 
 def train_decision_tree(train: Tuple[List[List[float]], List[List[float]]],
@@ -38,6 +48,8 @@ def train_decision_tree(train: Tuple[List[List[float]], List[List[float]]],
     print('Training Accuracy: {}%'.format(model.score(trainx, trainy) * 100))
     testx, testy = test
     print('Inference Accuracy: {}%'.format(model.score(testx, testy) * 100))
+    model_filename = 'decision_tree.sav'
+    save_model(pathlib.Path('./models', model_filename), model)
 
 
 def train_decision_boost(train: Tuple[List[List[float]], List[List[float]]],
@@ -50,6 +62,8 @@ def train_decision_boost(train: Tuple[List[List[float]], List[List[float]]],
     print('Training Accuracy: {}%'.format(model.score(trainx, trainy) * 100))
     testx, testy = test
     print('Inference Accuracy: {}%'.format(model.score(testx, testy) * 100))
+    model_filename = 'ada_boost.sav'
+    save_model(pathlib.Path('./models', model_filename), model)
 
 
 if __name__ == '__main__':
