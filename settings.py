@@ -1,6 +1,6 @@
 import os.path as path
 
-main_home = 'C:\\.ne_oe'
+main_home = '.'
 date_time_format = '%Y-%m-%d.%H-%M-%S'
 time_format = '%H-%M-%S'
 date_format = '%Y-%m-%d'
