@@ -1,0 +1,48 @@
+@startuml
+object english_words {
+    + **identifier**: int
+    + word: str
+    + pos: str
+    + definition: str
+    + wiktionary_entry: int
+}
+
+object old_english_words {
+    + **identifier**: int
+    + word: str
+    + pos: str
+    + definition: str
+    + wiktionary_entry: int
+}
+
+object translations {
+    + **identifier**: int
+    + ne: foreign key english_words
+    + oe: foreign key old_english_words
+}
+
+english_words <-- translations
+old_english_words "1" --> "1..*" translations
+
+object conjugations {
+    + **identifier**: int
+    + word: foreign key old_english_words
+    + person: str
+    + tense: str
+    + plurality: str
+    + mood: str
+    + conjugation: str
+}
+
+old_english_words  <-- conjugations
+
+object declensions {
+    + **identifier**: int
+    + word: foreign key old_english_words
+    + case: str
+    + plurality: str
+    + declension: str
+}
+
+old_english_words <-- declensions
+@enduml
