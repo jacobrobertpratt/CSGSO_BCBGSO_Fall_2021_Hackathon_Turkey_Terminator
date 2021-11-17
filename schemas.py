@@ -1,16 +1,20 @@
 english_schemas = '''english_words (
 id integer primary key,
 name text not null,
+pos text not null,
 definition text not null,
-wiktionary_entry integer not null
+wiktionary_entry integer not null,
+is_conjugation bool not null
 );
 '''
 
 old_english_schemas = '''old_english_words (
 id integer primary key,
 name text not null,
+pos text not null,
 definition text not null,
-wiktionary_entry integer not null
+wiktionary_entry integer not null,
+is_conjugation bool not null
 );
 '''
 
@@ -61,8 +65,8 @@ views = [
 ]
 
 record_typing = {
-    'english_words': '(name, definition, wiktionary_entry)',
-    'old_english_words': '(name, definition, wiktionary_entry)',
+    'english_words': '(name, pos, definition, wiktionary_entry, is_conjugation)',
+    'old_english_words': '(name, pos, definition, wiktionary_entry, is_conjugation)',
     'translations': '(ne, oe)',
     'conjugations': '(word, person, plurality, mood, tense, conjugation)',
     'declensions': '(word, gcase, plurality, declension)'

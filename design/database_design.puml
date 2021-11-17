@@ -13,6 +13,7 @@ object old_english_words {
     + pos: str
     + definition: str
     + wiktionary_entry: int
+    + is_conjugation: bool
 }
 
 object translations {
@@ -31,7 +32,7 @@ object conjugations {
     + tense: str
     + plurality: str
     + mood: str
-    + conjugation: str
+    + conjugation: foreign key old_english_words
 }
 
 old_english_words  <-- conjugations
@@ -41,7 +42,7 @@ object declensions {
     + word: foreign key old_english_words
     + case: str
     + plurality: str
-    + declension: str
+    + declension: foreign key old_english_words
 }
 
 old_english_words <-- declensions
