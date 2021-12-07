@@ -6,7 +6,7 @@ import numpy as np
 
 
 if __name__ == '__main__':
-    model_name = './models/ada_boost_letter.sav'
+    model_name = './models/decision_tree.sav'
     with open(model_name, 'rb') as fp:
         model = pickle.load(fp)
     with open(input('File to read? '), 'r') as fp:
