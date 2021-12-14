@@ -42,7 +42,6 @@ foreign key (word) references old_english_words(id)
 declensions_schemas = '''declensions (
 id integer primary key,
 word integer not null,
-gcase text,
 plurality text,
 declension text not null,
 foreign key (word) references old_english_words(id)
@@ -69,5 +68,5 @@ record_typing = {
     'old_english_words': '(name, pos, definition, wiktionary_entry, is_conjugation)',
     'translations': '(ne, oe)',
     'conjugations': '(word, person, plurality, mood, tense, conjugation)',
-    'declensions': '(word, gcase, plurality, declension)'
+    'declensions': '(word, plurality, declension)'
 }
