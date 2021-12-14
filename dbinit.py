@@ -115,7 +115,7 @@ def insert_declensions(declensions: List[Tuple[str, str, str]]):
         if w in index_dict:
             tuples.append((index_dict[w], '"{}"'.format(p), '"{}"'.format(c)))
         else:
-            error('{} was not found to be a root word'.format(w))
+            debug('{} was not found to be a root word'.format(w))
 
     cont.insert_record('declensions', tuples)
 
