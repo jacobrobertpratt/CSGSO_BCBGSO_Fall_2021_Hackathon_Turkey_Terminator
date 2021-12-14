@@ -1,5 +1,5 @@
 from controllers.sql import SQLController
-from controllers.ui import debug
+from controllers.ui import debug, error
 from utils.grammar import noun_declensions, case_list, plurality_list
 
 import json
@@ -18,22 +18,22 @@ def initialize_database():
     cont = SQLController.get_instance()
     cont.reset_database()
 
-    debug('Reading English Words')
-    with open(path.join(data_path, 'kaikki.org-dictionary-English.json'), 'rb') as fp:
-        lines = fp.read().decode('utf8').split('\n')
-        tuples = []
-        for li, line in enumerate(tqdm(lines[:-1])):
-            j = json.loads(line)
-            name = '"{}"'.format(j['word'].replace('"', "'"))
-            pos = '"{}"'.format(j['pos'].replace('"', "'"))
-            for sense in j['senses']:
-                conj = True
-                if 'form_of' not in sense:
-                    conj = False
-                definition = '"{}"'.format(
-                    ('. '.join(sense['glosses']) if 'glosses' in sense else '').replace('"', "'"))
-                tuples.append((name, pos, definition, li, conj))
-        cont.insert_record('english_words', tuples)
+    # debug('Reading English Words')
+    # with open(path.join(data_path, 'kaikki.org-dictionary-English.json'), 'rb') as fp:
+    #     lines = fp.read().decode('utf8').split('\n')
+    #     tuples = []
+    #     for li, line in enumerate(tqdm(lines[:-1])):
+    #         j = json.loads(line)
+    #         name = '"{}"'.format(j['word'].replace('"', "'"))
+    #         pos = '"{}"'.format(j['pos'].replace('"', "'"))
+    #         for sense in j['senses']:
+    #             conj = True
+    #             if 'form_of' not in sense:
+    #                 conj = False
+    #             definition = '"{}"'.format(
+    #                 ('. '.join(sense['glosses']) if 'glosses' in sense else '').replace('"', "'"))
+    #             tuples.append((name, pos, definition, li, conj))
+    #     cont.insert_record('english_words', tuples)
 
     debug('Reading Old English Words')
     with open(path.join(data_path, 'kaikki.org-dictionary-OldEnglish.json'), 'rb') as fp:
@@ -42,7 +42,11 @@ def initialize_database():
         declensions = []
         for li, line in enumerate(tqdm(lines[:-1])):
             j = json.loads(line)
-            name = '"{}"'.format(j['word'].replace('"', "'"))
+            if 'forms' not in j:
+                # error('{} has no forms!'.format(j['word']))
+                name = ['"{}"'.format(j['word'].replace('"', "'"))]
+            else:
+                name = ['"{}"'.format(w['form'].replace('"', "'")) for w in j['forms']]
             pos = '"{}"'.format(j['pos'].replace('"', "'"))
             for sense in j['senses']:
                 conj = True
@@ -54,14 +58,16 @@ def initialize_database():
                         cases = find_declensions(sense['tags'])
                         for c, p in cases:
                             for f in sense['form_of']:
-                                debug('{} is the {} {} form of {}'.format(name, c, p, f['word']))
+                                # debug('{} is the {} {} form of {}'.format(name, c, p, f['word']))
                                 declensions.append((f['word'], c, p))
                 definition = '"{}"'.format(
                     ('. '.join(sense['glosses']) if 'glosses' in sense else '').replace('"', "'"))
-                tuples.append((name, pos, definition, li, conj))
+                for n in name:
+                    tuples.append((n, pos, definition, li, conj))
         cont.insert_record('old_english_words', tuples)
 
         # Insert Declensions
+        insert_declensions(declensions)
 
 
 def find_declensions(sense: List[str]) -> List[Tuple[str, str]]:
@@ -88,16 +94,30 @@ def insert_declensions(declensions: List[Tuple[str, str, str]]):
     debug('Inserting Noun Declension Table')
     words = list(set(['"{}"'.format(d[0].replace('"', "'")) for d in declensions]))
     where_clause = 'name in ({})'.format(','.join(words)) if len(words) > 1 else 'name = {}'.format(words[0])
-    indices = cont.select_conditional('old_english_words', 'id, name', where_clause)
+    indices = cont.select_conditional('old_english_words', 'id, name, pos', where_clause)
 
     debug('Generating foreign key dictionary')
+    pos_dict = {}
     index_dict = {}
-    for index, name in indices:
+    for index, name, pos in indices:
         if name not in index_dict:
             index_dict[name] = index
+            pos_dict[name] = pos
+        elif pos == 'noun' and pos_dict[name] != 'noun':
+            index_dict[name] = index
+            pos_dict[name] = pos
+        elif pos == 'noun':
+            debug('Possible ambiguous declension of {} as a {} and {}'.format(name, pos, pos_dict[name]))
 
     debug('linking...')
-    cont.insert_record('declensions', [(index_dict[w], p, c) for w, p, c in declensions])
+    tuples = []
+    for w, p, c in declensions:
+        if w in index_dict:
+            tuples.append((index_dict[w], '"{}"'.format(p), '"{}"'.format(c)))
+        else:
+            error('{} was not found to be a root word'.format(w))
+
+    cont.insert_record('declensions', tuples)
 
 
 if __name__ == '__main__':
